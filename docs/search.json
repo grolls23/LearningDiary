@@ -39,6 +39,6 @@
     "href": "wk2.html",
     "title": "2  Xaringan Presentation - VIIRS",
     "section": "",
-    "text": "This week’s diary is a Xaringan presentation on the Visual Infrared Imaging Radiometry Suite, (VIIRS), an environment-focused sensor platform operated by NASA and NOAA.\n```{{r echo = FALSE, out.width=‘40%’}} xaringanExtra::embed_xaringan( url = “https://grolls23.github.io/CASA0023Wk2/o”, ratio = “16:9”)\n```"
+    "text": "This week’s diary is a Xaringan presentation on the Visual Infrared Imaging Radiometry Suite, (VIIRS), an environment-focused sensor platform operated by NASA and NOAA."
   }
 ]
