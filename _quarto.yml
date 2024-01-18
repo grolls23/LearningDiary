@@ -1,0 +1,22 @@
+project:
+  type: book
+
+book:
+  title: "Gavin Rolls - Learning Diary for CASA 0023"
+  author: "Gavin Rolls"
+  date: "1/18/2024"
+  chapters:
+    - index.qmd
+    - wk1.qmd
+    - wk2.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: darkly
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

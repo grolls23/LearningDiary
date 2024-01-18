@@ -1,0 +1,7 @@
+---
+title: "Xaringan Presentation - VIIRS"
+author: "Gavin Rolls"
+date: "1/23/2024"
+---
+
+This week's diary is a Xaringan presentation
