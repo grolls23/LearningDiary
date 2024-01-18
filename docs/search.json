@@ -26,5 +26,19 @@
     "title": "1  Introduction to Remote Sensing",
     "section": "1.4 References",
     "text": "1.4 References\n\n\n\n\nEarth Science Data Systems, NASA. 2020. “What Is Synthetic Aperture Radar? | Earthdata.” https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar.\n\n\nFlorida, Richard, Tim Gulden, and Charlotte Mellander. 2008. “The Rise of the Mega-Region.” Cambridge Journal of Regions, Economy and Society 1 (3): 459–76. https://doi.org/10.1093/cjres/rsn018.\n\n\nGeorg, Isabel, Thomas Blaschke, and Hannes Taubenböck. 2018. “Are We in Boswash Yet? A Multi-Source Geodata Approach to Spatially Delimit Urban Corridors.” ISPRS International Journal of Geo-Information 7 (1): 15. https://doi.org/10.3390/ijgi7010015.\n\n\nNASA Pace Gallery. n.d. “Visible Infrared Imaging Radiometer Suite (VIIRS).” https://pace.oceansciences.org/gallery_more.cgi?id=148.\n\n\nThe Engineering Toolbox. n.d. “Electromagnetic Spectrum.” https://www.engineeringtoolbox.com/electromagnetic-spectrum-d_1929.html.\n\n\nWoodall, Brian, Mariel Borowitz, Kari Watkins, Maria Costa, Angela Howard, Perrine Kemerait, Michelle Lee, et al. 2023. “The Megaregion  Forms, Functions, and Potential? A Literature Review and Proposal for Advancing Research.” International Journal of Urban Sciences 0 (0): 1–23. https://doi.org/10.1080/12265934.2023.2189156."
+  },
+  {
+    "objectID": "index.html#hello",
+    "href": "index.html#hello",
+    "title": "Gavin Rolls - Learning Diary for CASA 0023",
+    "section": "Hello!",
+    "text": "Hello!\nI’m Gavin Rolls. Originally from Denver, Colorado, I’m currently an MSc Student in Urban Spatial Science studying in the Centre for Adavnced Spatial Analytics (CASA) at University College London. Before moving to London this autumn, I did my undergraduate at the Georgia Institute of Technology studying Computer Science.\nThis page is a home for reflections and presentations I’ll be making over the course of second term for CASA 0023 - Remotely Sensing Cities and Environments. Each week of term will have a page of its own, which can be accessed from the sidebar adjacent."
+  },
+  {
+    "objectID": "wk2.html",
+    "href": "wk2.html",
+    "title": "2  Xaringan Presentation - VIIRS",
+    "section": "",
+    "text": "This week’s diary is a Xaringan presentation"
   }
 ]
