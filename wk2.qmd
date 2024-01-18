@@ -6,7 +6,8 @@ date: "1/23/2024"
 
 This week's diary is a Xaringan presentation on the Visual Infrared Imaging Radiometry Suite, (VIIRS), an environment-focused sensor platform operated by NASA and NOAA.
 
-```{{r echo = FALSE, out.width='40%'}}
+```{r echo = FALSE, out.width='40%'}
+
 xaringanExtra::embed_xaringan(
   url = "https://grolls23.github.io/CASA0023Wk2/o",
   ratio = "16:9")
