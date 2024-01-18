@@ -8,7 +8,7 @@ This week's diary is a Xaringan presentation on the Visual Infrared Imaging Radi
 
 ```{{r echo = FALSE, out.width='40%'}}
 xaringanExtra::embed_xaringan(
-  url = "PRESENTATION URL",
+  url = "https://grolls23.github.io/CASA0023Wk2/",
   ratio = "16:9")
 
 ```
