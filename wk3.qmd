@@ -10,11 +10,19 @@ This week, we discussed the pre-processing steps that allow us to turn raw remot
 
 ### **Corrections**
 
-A number of types of distortions can occur which can alter where artefacts on the ground are placed in relation to each other or how radiation
+A number of types of distortions can occur which can alter where artefacts on the ground are placed in relation to each other or how radiation measured at the satellite differs from conditions at the surface. The main subcategories of distortions and primary methods to correct for them are briefly described here:
 
-**Geometric Correction:** \[Text\]
+**Geometric Correction:** The viewing angle of a satellite to the point on Earth's surface being photographed can cause distortions in the resulting images, arising from inconsistent perspectives. Ideally, a satellite will be at the local zenith (directly above) of the point on Earth being imaged, but this is not always the case.
 
-**Atmospheric Correction:** \[Text\]
+![Illustration of local zenith and satellite viewing angle (CITE NEEDED - ROYAL BELGIAN)](img/Zenith.png)
+
+![Cartosat-2 photos of the same hilly landscape taken at different viewing zenith angles (CITE NEEDED HERE - KUMARI ET AL)](img/Off-Nadir.png)
+
+Similar distortions can occur as a result of the Earth's topography or from the rotation of the earth moving the ground underneath the satellite as it orbits.
+
+To apply a geometric correction, reference points (called ground control points) are matched between the collected image and a 'ground truth' dataset of the surface. From there, a linear regression model is generated and a geometric transformation applied to each point in the image.
+
+**Atmospheric Correction:** Atmospheric
 
 **Orthorectification:** \[Text\]
 
