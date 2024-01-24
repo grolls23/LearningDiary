@@ -40,5 +40,33 @@
     "title": "2  Xaringan Presentation - VIIRS",
     "section": "",
     "text": "This week’s diary is a Xaringan presentation on the Visual Infrared Imaging Radiometry Suite, (VIIRS), an environment-focused sensor platform operated by NASA and NOAA."
+  },
+  {
+    "objectID": "wk3.html#summary",
+    "href": "wk3.html#summary",
+    "title": "3  Image Correction & Data Joining",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\nThis week, we discussed the pre-processing steps that allow us to turn raw remotely sensed data into a product which we can use for analysis. The processing requirements we described fell into two categories which will be detailed below.\n\n3.1.1 Corrections\nA number of types of distortions can occur which can alter where artefacts on the ground are placed in relation to each other or how radiation\nGeometric Correction: [Text]\nAtmospheric Correction: [Text]\nOrthorectification: [Text]\nRadiometric Correction: [Text]\n\n\n3.1.2 Data Joining\nFeathering: [Text]\nImage Enhancement: [Text]"
+  },
+  {
+    "objectID": "wk3.html#applications-in-research",
+    "href": "wk3.html#applications-in-research",
+    "title": "3  Image Correction & Data Joining",
+    "section": "3.2 Applications in Research",
+    "text": "3.2 Applications in Research\n[Text]"
+  },
+  {
+    "objectID": "wk3.html#reflection",
+    "href": "wk3.html#reflection",
+    "title": "3  Image Correction & Data Joining",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection\n[Text]"
+  },
+  {
+    "objectID": "wk3.html#references",
+    "href": "wk3.html#references",
+    "title": "3  Image Correction & Data Joining",
+    "section": "3.4 References",
+    "text": "3.4 References"
   }
 ]

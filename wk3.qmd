@@ -1,5 +1,6 @@
 ---
-title: "Image Correction & Data Joining in Remote Sensing"
+title: "Image Correction & Data Joining"
+author: "Gavin Rolls"
 date: "1/30/2024"
 ---
 
@@ -9,7 +10,7 @@ This week, we discussed the pre-processing steps that allow us to turn raw remot
 
 ### **Corrections**
 
-A number of types of distortions can occur
+A number of types of distortions can occur which can alter where artefacts on the ground are placed in relation to each other or how radiation
 
 **Geometric Correction:** \[Text\]
 
@@ -34,5 +35,3 @@ A number of types of distortions can occur
 \[Text\]
 
 ## **References**
-
-\[Text\]
