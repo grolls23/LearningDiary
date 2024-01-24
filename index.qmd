@@ -1,7 +1,9 @@
 ## Hello! {.unnumbered}
 
-I'm Gavin Rolls. Originally from Denver, Colorado, I'm currently an MSc Student in Urban Spatial Science studying in the Centre for Adavnced Spatial Analytics (CASA) at University College London. Before moving to London this autumn, I did my undergraduate at the Georgia Institute of Technology studying Computer Science.
+I'm Gavin Rolls. Originally from Denver, Colorado in the United States. I'm currently an MSc Student in Urban Spatial Science studying in the Centre for Advanced Spatial Analytics (CASA) at University College London. Before moving to London this autumn, I did my undergraduate degree in Computer Science at the Georgia Institute of Technology in Atlanta, USA.
 
 ![Taken Summer 2023 in Osaka, Japan where I travelled to teach the basics of GIS to undergraduate students from Georgia Tech](img/Profile.png)
+
+I'm interested in all things cities with particular interests in transport and urban form. Outside of classes, I'm an avid cyclist and runner. In Summer of 2023 my twin brother and I cycled from Naples, IT to Edinburgh, UK and wrote about the experience on a blog linked [here](http://rollseurotour.substack.com).
 
 This page is a home for reflections and presentations I'll be making over the course of second term for CASA 0023 - Remotely Sensing Cities and Environments. Each week of term will have a page of its own, which can be accessed from the sidebar adjacent.
