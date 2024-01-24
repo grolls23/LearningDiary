@@ -1,0 +1,38 @@
+---
+title: "Image Correction & Data Joining in Remote Sensing"
+date: "1/30/2024"
+---
+
+## Summary
+
+This week, we discussed the pre-processing steps that allow us to turn raw remotely sensed data into a product which we can use for analysis. The processing requirements we described fell into two categories which will be detailed below.
+
+### **Corrections**
+
+A number of types of distortions can occur
+
+**Geometric Correction:** \[Text\]
+
+**Atmospheric Correction:** \[Text\]
+
+**Orthorectification:** \[Text\]
+
+**Radiometric Correction:** \[Text\]
+
+### **Data Joining**
+
+**Feathering:** \[Text\]
+
+**Image Enhancement:** \[Text\]
+
+## Applications in Research
+
+\[Text\]
+
+## Reflection
+
+\[Text\]
+
+## **References**
+
+\[Text\]

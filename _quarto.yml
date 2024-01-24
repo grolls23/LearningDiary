@@ -10,6 +10,7 @@ book:
     - index.qmd
     - wk1.qmd
     - wk2.qmd
+    - wk3.qmd
 
 bibliography: references.bib
 
