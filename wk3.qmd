@@ -22,7 +22,9 @@ Similar distortions can occur as a result of the Earth's topography or from the 
 
 To apply a geometric correction, reference points (called ground control points) are matched between the collected image and a 'ground truth' dataset of the surface. From there, a linear regression model is generated and a geometric transformation applied to each point in the image.
 
-**Atmospheric Correction:** Atmospheric
+**Atmospheric Correction:** Interference from Earth's atmosphere such as cloud cover atmospheric scattering, can cause radiation reflected from Earth's surface to be distorted or obscured entirely, \[CONT. HERE\]
+
+![Relative Atmospheric Correction as applied to a true colour composite of Sentinel-2B imagery (CITE NEEDED - NASA)](img/AtmosphericCorrection.png)
 
 **Orthorectification:** \[Text\]
 
