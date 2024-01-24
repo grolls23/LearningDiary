@@ -32,11 +32,11 @@ Fortunately for professionals (or hobbyists) using remote sensing imagery, level
 
 ### **Data Joining**
 
-Because remote sensing data is collected and provided as sets of discrete images \[CONT HERE\]
+Because remote sensing data is collected and provided as sets of discrete images, it becomes important to join adjacent images together if an area of study falls across that boundary. Typically, remotely sensed images are feathered together, meaning a slight area of overlap is blended together to enable a seamless-looking transition, even between temporally distinct images. Typically, brightness values are normalised across the two images before this feathering occurs.
 
-**Feathering:** \[Text\]
+![Illustration of feathering images together (CITE NEEDED - LI ET AL)](img/Feathering.jpg)
 
-**Image Enhancement:** \[Text\]
+There are a number of other image enhancements one can do, including normalising brightness across bands or 'stretching' data across the entire range of digital numbers for a particular sensor to improve contrast. In the interest of brevity, I will omit a more detailed description here.
 
 ## Applications in Research
 
