@@ -40,7 +40,9 @@ There are a number of other image enhancements one can do, including normalising
 
 ## Applications in Research
 
-\[Text\]
+Although much of the processing described above is often more of a prerequisite to remote sensing work than the primary focus. With that said, a particular paper of interest I found used geometric distortions not as a
+
+\[CONT - LONGBOTHAM ET AL\]
 
 ## Reflection
 
