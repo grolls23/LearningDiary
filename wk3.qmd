@@ -46,6 +46,6 @@ Another paper I found interesting, *Fusion based Seamless Mosaic for Remote Sens
 
 ## Reflection
 
-\[Text\]
+Pulling the curtain back, so to speak, on image processing was an enlightening process because my entire experience with remote sensing to date has dealt with pre-processed products that allowed me, as the end user, to bypass any concerns related to image collection entirely. It's easy to conceptualise remotely sensed images as perfect and uninterrupted when Earth Engine is the window through which all of this data is viewed. Learning that atmospheric models are used to correct for specific distortions or how complex (and computationally expensive) some methods of mosaicking images can be gives me a greater appreciation for the power of the technology we're applying when we use Landsat, Sentinel, or other EO data. Although I don't see myself doing any work on image correction tools in the future, I think the context is critical.
 
 ## **References**
