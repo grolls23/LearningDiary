@@ -48,8 +48,8 @@ In addition to building upon existing methodologically-based heat maps, using re
 
 ## Reflection
 
-I found it more challenging than I anticipated to identify a combination of city, problem, datasource, and policy suggestion that fit the bill for this week's assignment. When looking around at what work had been done, I almost felt as if
+I found it more challenging than I anticipated to identify a combination of city, problem, data source, and policy suggestion that fit the bill for this week's assignment. When looking around at what work had been done, I almost felt as if the whole span of applications had already been covered. In reality, it seems that a lot of approaches which feel like common sense are being ignored by a lot of municipalities. I don't know if a city like Denver simply doesn't have the bandwidth to further investigate heat effects, if it's working hard through other means to fix them, or if it's not concerned with them at all. Municipal documentation has been quite poor on that front.
 
-\[The reflection criterion will refer to what you have learnt in relation to the policy, city and the application of the data.\]
+Additionally, I find it surprising that so much of the work of urban heat resilience feels as if it's concerned with mitigating the impact of heat than actually trying to lower the temperature. Shade shelters in particular feel like a bizarre first solution because, while I can see why they might be important and necessary in a number of circumstances, they won't be any good at cooling cities down themselves like improved vegetation cover or reducing impervious surfaces would.
 
 ## References
