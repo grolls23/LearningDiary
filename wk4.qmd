@@ -16,6 +16,8 @@ I want to talk not just about my problem of interest, urban heat effects, but al
 
 Central regions of Denver experience a heat island effect relative to its surroundings that ranges anywhere from 3.5 to 4.2C depending on the time of day and current season (CITE THUNEN - MS THESIS). Cooling the city is a critical goal, and the UN Environment Programme identifies heat mitigation in urban areas as a goal of immense importance in its 'Beating the Heat' handbook for cities. (CITE HANDBOOK). Denver itself indicates in its climate action plan, the city is likely to experience increasingly intense heat events in coming decades and that improving resilience along this dimension is critical (CITE DENVER CLIMATE ACTION PLAN).
 
+NOTE TO SELF - INTRODUCE PARKING LOTS HERE???
+
 ## Remote Sensing Dataset of Use
 
 The good news for is that there exist a number of remotely sensed datasets which are extremely useful at identifying both impervious surface areas as well as the heat effects they generate. I would propose a method that applies the following datasets to be able to effectively identify areas of impervious surfaces, particularly parking lots, that are a) not part of existing structures and b) contributing to local heat effects:
