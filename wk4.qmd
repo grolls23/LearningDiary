@@ -10,7 +10,7 @@ In Week 4, we've been tasked with identifying a particular city and policy chall
 
 I haven't yet 'visited' my hometown of Denver in my degree programme yet and seeing that it deals with a number of problems (many of which I'm particularly passionate about), I wanted to take a look.
 
-I want to talk not just about my problem of interest, urban heat effects, but also a particular contributing factor - high amounts of impervious surface area and specifically parking lots. Impervious surfaces are a global problem but America's high automotive dependence and sprawling development patters have resulted in over 110 thousand square kilometres of surface area across the country (CITE FRAZER). Most of the literature I've come across has talked about impervious surfaces focuses on either flooding (CITE FENG ET AL) or heat island effects but I wish to focus on the latter.
+I want to talk not just about my problem of interest, urban heat effects, but also a particular contributing factor - high amounts of impervious surface area and specifically parking lots. Impervious surfaces are a global problem but America's high automotive dependence and sprawling development patters have resulted in over 110 thousand square kilometres of surface area across the country [@frazer2005]. Most of the literature I've come across has talked about impervious surfaces focuses on either flooding (CITE FENG ET AL) or heat island effects but I wish to focus on the latter.
 
 ![Impervious surfaces in Central Denver, as captured by the IKONOS sensor (CITE IKONOS)](img/DenverTarmac.jpg)
 
