@@ -51,6 +51,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./wk4.html" rel="next">
 <link href="./wk2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -141,6 +142,12 @@ div.csl-indent {
   <div class="sidebar-item-container"> 
   <a href="./wk3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Image Correction &amp; Data Joining</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote Sensing for Urban Policy</span></span></a>
   </div>
 </li>
     </ul>
@@ -241,8 +248,8 @@ div.csl-indent {
 </section>
 <section id="applications-in-research" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="applications-in-research"><span class="header-section-number">3.2</span> Applications in Research</h2>
-<p>Although much of the processing described above is often more of a prerequisite to remote sensing work than the primary focus. With that said, a particular paper of interest I found used geometric distortions not as an image collection error to be corrected but as an additional source of data that adds height data to image collections of Atlanta, Georgia. <span class="citation" data-cites="longbothamVeryHighResolution2012">(<a href="#ref-longbothamVeryHighResolution2012" role="doc-biblioref">Longbotham et al. 2012</a>)</span>. By creating what they refer to as a ‘multiangle image sequence’ of Atlanta Georgia using the WorldView-2 imaging satellite height data can be derived from these multi-image datasets, where only synthetic aperture radar (SAR) or LIDAR sensors have typically been used. From this, they used this height data to improve urban classification of the city by 27%.</p>
-<p>Another paper I found interesting, <em>Fusion based Seamless Mosaic for Remote Sensing Images</em>, concerns the process of mosaicking, or stitching remotely sensed images together. Although in class we discussed the basic method of ‘feathering’ images together, whereby the region overlapped by the two images is converted into a weighted average of the two (with weights depending on which image each pixel is closer to). This paper proposes a method whereby images are decomposed into low-frequency and high-frequency components and processed independently. <span class="citation" data-cites="luFusionBasedSeamless2014">(<a href="#ref-luFusionBasedSeamless2014" role="doc-biblioref">Lu, Li, and Fu 2014</a>)</span> For low-frequency parts of images, which are smooth and continuous in nature, the aforementioned feathering effect is used. With that said, high-frequency components such as edges are preserved using a seam-stitching method that enables important structures to be best maintained while enabling smooth transitions of other features between each image.</p>
+<p>Much of the processing described above is often more of a prerequisite to remote sensing work than the primary focus. With that said, a particular paper of interest I found used geometric distortions not as an image collection error to be corrected but as an additional source of data that adds height data to image collections of Atlanta, Georgia. <span class="citation" data-cites="longbothamVeryHighResolution2012">(<a href="#ref-longbothamVeryHighResolution2012" role="doc-biblioref">Longbotham et al. 2012</a>)</span>. By creating what they refer to as a ‘multiangle image sequence’ of Atlanta Georgia using the WorldView-2 imaging satellite height data can be derived from these multi-image datasets, where only synthetic aperture radar (SAR) or LIDAR sensors have typically been used. From this, they used this height data to improve urban classification of the city by 27%.</p>
+<p>Another paper I found interesting, <em>Fusion based Seamless Mosaic for Remote Sensing Images</em>, concerns the process of mosaicking, or stitching remotely sensed images together. In class we discussed the basic method of ‘feathering’ images together, whereby the region overlapped by the two images is converted into a weighted average of the two (with weights depending on which image each pixel is closer to). This paper proposes a method whereby images are decomposed into low-frequency and high-frequency components and processed independently. <span class="citation" data-cites="luFusionBasedSeamless2014">(<a href="#ref-luFusionBasedSeamless2014" role="doc-biblioref">Lu, Li, and Fu 2014</a>)</span> For low-frequency parts of images, which are smooth and continuous in nature, the aforementioned feathering effect is used. With that said, high-frequency components such as edges are preserved using a seam-stitching method that enables important structures to be best maintained while enabling smooth transitions of other features between each image.</p>
 </section>
 <section id="reflection" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
@@ -515,6 +522,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./wk4.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote Sensing for Urban Policy</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

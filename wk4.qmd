@@ -10,13 +10,13 @@ In Week 4, we've been tasked with identifying a particular city and policy chall
 
 I haven't yet 'visited' my hometown of Denver in my degree programme yet and seeing that it deals with a number of problems (many of which I'm particularly passionate about), I wanted to take a look.
 
-I want to talk not just about my problem of interest, urban heat effects, but also a particular contributing factor - high amounts of impervious surface area and specifically parking lots. Impervious surfaces are a global problem but America's high automotive dependence and sprawling development patters have resulted in over 110 thousand square kilometres of surface area across the country [@frazer2005]. Most of the literature I've come across has talked about impervious surfaces focuses on either flooding (CITE FENG ET AL) or heat island effects but I wish to focus on the latter.
+I want to talk not just about my problem of interest, urban heat effects, but also a particular contributing factor - high amounts of impervious surface area and specifically parking lots. Impervious surfaces are a global problem but America's high automotive dependence and sprawling development patters have resulted in over 110 thousand square kilometres of surface area across the country [@frazer2005]. Most of the literature I've come across has talked about impervious surfaces focuses on either flooding [@fengUrbanizationImpactsFlood2021] or heat island effects but I wish to focus on the latter.
 
-![Impervious surfaces in Central Denver, as captured by the IKONOS sensor (CITE IKONOS)](img/DenverTarmac.jpg)
+![Impervious surfaces in Central Denver, as captured by the IKONOS sensor - @satelliteimagingcorporationIKONOSSatelliteImage](img/DenverTarmac.jpg)
 
-Central regions of Denver experience a heat island effect relative to its surroundings that ranges anywhere from 3.5 to 4.2C depending on the time of day and current season (CITE THUNEN - MS THESIS). Cooling the city is a critical goal, and the UN Environment Programme identifies heat mitigation in urban areas as a goal of immense importance in its 'Beating the Heat' handbook for cities. (CITE HANDBOOK). Denver itself indicates in its climate action plan, the city is likely to experience increasingly intense heat events in coming decades and that improving resilience along this dimension is critical (CITE DENVER CLIMATE ACTION PLAN).
+Central regions of Denver experience a heat island effect relative to its surroundings that ranges anywhere from 3.5 to 4.2C depending on the time of day and current season [@thunenUrbanHeatIsland2013]. Cooling the city is a critical goal, and the UN Environment Programme identifies heat mitigation in urban areas as a goal of immense importance in its 'Beating the Heat' handbook for cities. [@environmentBeatingHeatSustainable2021]. Denver itself indicates in its climate action plan, the city is likely to experience increasingly intense heat events in coming decades and that improving resilience along this dimension is critical [@cityofdenverDenver80502018].
 
-Although it's not possible to eliminate impervious surfaces entirely, one phenomena I noticed growing up in Denver was the massive number of vacant lots and unused parking lots which would remain unused for years on end. Large lots come with a number of environmental side effects and even when taken alone, contribute meaningfully to heat island effects (CITE DAVIS ET AL). Additionally, research has shown that infill can have a positive effect on heat island effects (CITE HEMHOLZ).
+Although it's not possible to eliminate impervious surfaces entirely, one phenomena I noticed growing up in Denver was the massive number of vacant lots and unused parking lots which would remain unused for years on end. Large lots come with a number of environmental side effects and even when taken alone, contribute meaningfully to heat island effects [@davisEnvironmentalEconomicCosts2010]. Additionally, research has shown that infill can have a positive effect on heat island effects [@helmholzQuantifyingImpactUrban2021].
 
 ## Remote Sensing Dataset of Use
 
@@ -24,13 +24,13 @@ The good news for is that there exist a number of remotely sensed datasets which
 
 ### Land Surface Temperature (LST)
 
-All active Landsat platforms collect data in the thermal infrared band at 30 metre resolution (CITE USGS TECHNICAL DOC) and its use in studying urban heat island effects is extensive (CITE XU ET AL). In order to investigate urban heating at a higher spatial resolution, this platform is preferable to using meteorological data as has been done in the past in the context of Denver (CITE THUNEN - MS THESIS).
+All active Landsat platforms collect data in the thermal infrared band at 30 metre resolution [@saylerLandsat89Collection2023] and its use in studying urban heat island effects is extensive [@xuLongtermAnalysisUrban2023]. In order to investigate urban heating at a higher spatial resolution, this platform is preferable to using meteorological data as has been done in the past in the context of Denver [@thunenUrbanHeatIsland2013].
 
-![Landsat 9 RGB and LST readings compared (CITE USGS TECHNICAL DOC)](img/LandsatLST.png)
+![Landsat 9 RGB and LST readings compared - @saylerLandsat89Collection2023](img/LandsatLST.png)
 
 ### Impervious Surface Area (ISA)
 
-Although not a primary Landsat product like LST, Impervious Surface area can be derived from Landsat products and is available to researchers as a remote sensing product (CITE ZHANG ET AL). This data is also available at 30 metre resolution
+Although not a primary Landsat product like LST, Impervious Surface area can be derived from Landsat products and is available to researchers as a remote sensing product [@zhangGISD30Global302022]. This data is also available at 30 metre resolution
 
 ### OSM Building Footprint Data
 
@@ -40,11 +40,11 @@ As impervious surfaces cover a large proportion of land in metropolitan Denver, 
 
 It would be my hope that a combination of these datasets would allow policy-makers to identify the areas of Denver which most suffer from heat island effects and be able to search for nearby lots which might be eligible for infill or conversion into greenspace in order to help alleviate local effects.
 
-With that said, impervious surfaces like parking lots are only one piece of the heat island puzzle and attempts to tackle heat islands at a city-level should absolutely apply other methods put forward by the 'Beating the Heat' manual such as heat-resilient infrastructure, street trees, and expanded greenspace, to name a few (CITE BTH HERE).
+With that said, impervious surfaces like parking lots are only one piece of the heat island puzzle and attempts to tackle heat islands at a city-level should absolutely apply other methods put forward by the 'Beating the Heat' manual such as heat-resilient infrastructure, street trees, and expanded greenspace, to name a few [@environmentBeatingHeatSustainable2021].
 
 ## Advancing Existing Methods
 
-In addition to building upon existing methodologically-based heat maps, using remote sensing to mitigate heat islands, especially in the context of impervious surfaces constitutes a shift from the methods most often used to address heat. The policy approaches most often employed include building with high albedo materials, improving ground vegetation and shade trees, and green roofs and facades (CITE DEGIRMENCI ET AL). I think remotely sensed data provides an incredible opportunity to address root causes instead of mitigating effects, hence my interest in suggesting that it be used as a tool to identify areas of heat-insensitive development.
+In addition to building upon existing methodologically-based heat maps, using remote sensing to mitigate heat islands, especially in the context of impervious surfaces constitutes a shift from the methods most often used to address heat. The policy approaches most often employed include building with high albedo materials, improving ground vegetation and shade trees, and green roofs and facades [@degirmenciUnderstandingPolicyTechnology2021]. I think remotely sensed data provides an incredible opportunity to address root causes instead of mitigating effects, hence my interest in suggesting that it be used as a tool to identify areas of heat-insensitive development.
 
 ## Reflection
 
