@@ -6,11 +6,19 @@ date: "2/06/2024"
 
 ## City of Choice & Policy Concern
 
-In Week 4 ...
+In Week 4, we've been tasked with identifying a particular city and policy challenge it faces which could be investigated or solved with remote sensing.
+
+I haven't yet 'visited' my hometown of Denver in my degree programme yet and seeing that it deals with a number of problems (many of which I'm particularly passionate about), I wanted to take a look.
+
+I want to talk not just about my problem of interest, urban heat effects, but also a particular contributing factor - high amounts of impervious surfaces. Impervious surfaces are a global problem but America's high automotive dependence and sprawling development patters have resulted in over 110 thousand square kilometres of surface area across the country (CITE FRAZER). Most of the literature I've come across has talked about impervious surfaces focuses on either flooding (CITE FENG ET AL) or heat island effects but I wish to focus on the latter.
+
+![Impervious surfaces in Central Denver, as captured by the IKONOS sensor](img/DenverTarmac.jpg)
+
+Central regions of Denver experience a heat island effect relative to its surroundings that ranges anywhere from 3.5 to 4.2C depending on the time of day and current season (CITE THUNEN - MS THESIS). Cooling the city is a critical goal, and the UN Environment Programme identifies heat mitigation in urban areas as a goal of immense importance in its 'Beating the Heat' handbook for cities. (CITE HANDBOOK). Denver itself indicates in its climate action plan, the city is likely to experience increasingly intense heat events in coming decades and that improving resilience along this dimension is critical (CITE DENVER CLIMATE ACTION PLAN).
 
 ## Remote Sensing Dataset of Use
 
-\[Text\]
+The good news is that there exist a number of remotely sensed datasets which are extremely useful at identifying both impervious surface areas as well as the heat effects they generate.
 
 ## Reflection
 
