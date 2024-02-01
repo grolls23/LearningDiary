@@ -18,7 +18,16 @@ Central regions of Denver experience a heat island effect relative to its surrou
 
 ## Remote Sensing Dataset of Use
 
-The good news is that there exist a number of remotely sensed datasets which are extremely useful at identifying both impervious surface areas as well as the heat effects they generate.
+The good news for is that there exist a number of remotely sensed datasets which are extremely useful at identifying both impervious surface areas as well as the heat effects they generate. I would propose a method that applies the following datasets to be able to effectively identify areas of impervious surfaces, particularly parking lots, that are a) not part of existing structures and b) contributing to local heat effects:
+
+1.  Impervious Surface Area Data (ISA)
+2.  Land Surface Temperature (LST)
+    1.  NOTE - FURTHER AIDED BY LOCAL HEAT DATA?
+3.  OSM Building Footprint Data
+
+## Advancing Existing Methods
+
+\[Text - Hungary Paper, Policy Paper\]
 
 ## Reflection
 
