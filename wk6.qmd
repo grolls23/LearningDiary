@@ -1,0 +1,19 @@
+---
+title: "Introduction to Earth Engine"
+author: "Gavin Rolls"
+date: "2/27/2024"
+---
+
+## Summary
+
+\[Text\]
+
+## Applications in Research
+
+\[Text\]
+
+## Reflection
+
+\[Text
+
+## **References**
