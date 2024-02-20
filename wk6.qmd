@@ -6,7 +6,7 @@ date: "2/27/2024"
 
 ## Summary
 
-\[Text\]
+After the a week off from class, we were introduced to Google Earth Engine, the platform for remotely sensed data analysis which we will make our home for the remainder of the course.
 
 ## Applications in Research
 
