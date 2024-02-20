@@ -6,14 +6,20 @@ date: "2/27/2024"
 
 ## Summary
 
-After the a week off from class, we were introduced to Google Earth Engine, the platform for remotely sensed data analysis which we will make our home for the remainder of the course.
+After the a week off from class, we were introduced to Google Earth Engine, the platform for remotely sensed data analysis which we will make our home for the remainder of the course. The number of specific tools and operations we learned about in Earth Engine is too great to share concisely in this learning diary format. For that reason, I will focus on what Earth Engine is and what makes it both unique and powerful as a spatial analysis platform.
+
+### The Basics
+
+Google Earth Engine is a high-performance geospatial analysis tool, with a particular focus on remote sensing, which was developed to allow researchers and other professionals to use high performance computing technologies in their work without requiring the requisite IT skill which has been required to take advantage of these resources in the past [@gorelickGoogleEarthEngine2017]. The nature of remotely sensed data - raster datasets covering large expanses of the world's surface - requires large computing resources to process at scale.
+
+Earth Engine satisfies these computational requriements by \[CONT HERE - PARARELL COMPUTING, SERVER SIDE, ETC...\]
 
 ## Applications in Research
 
-\[Text\]
+\[NOTE TO SELF (WIP) - TWO DIFFERENT PAPERS\]
 
 ## Reflection
 
-\[Text
+\[Text\]
 
 ## **References**

@@ -123,27 +123,27 @@
     "href": "wk6.html#summary",
     "title": "6  Introduction to Earth Engine",
     "section": "6.1 Summary",
-    "text": "6.1 Summary\nAfter the a week off from class, we were introduced to Google Earth Engine, the platform for remotely sensed data analysis which we will make our home for the remainder of the course."
+    "text": "6.1 Summary\nAfter the a week off from class, we were introduced to Google Earth Engine, the platform for remotely sensed data analysis which we will make our home for the remainder of the course. The number of specific tools and operations we learned about in Earth Engine is too great to share concisely in this learning diary format. For that reason, I will focus on what Earth Engine is and what makes it both unique and powerful as a spatial analysis platform.\n\n6.1.1 The Basics\nGoogle Earth Engine was developed to allow researchers and other professionals to use high performance computing technologies in their work without requiring the requisite IT skill which has been required to do so in the past (Gorelick et al. 2017)."
   },
   {
     "objectID": "wk6.html#applications-in-research",
     "href": "wk6.html#applications-in-research",
     "title": "6  Introduction to Earth Engine",
     "section": "6.2 Applications in Research",
-    "text": "6.2 Applications in Research\n[Text]"
+    "text": "6.2 Applications in Research\n[NOTE TO SELF (WIP) - TWO DIFFERENT PAPERS]"
   },
   {
     "objectID": "wk6.html#reflection",
     "href": "wk6.html#reflection",
     "title": "6  Introduction to Earth Engine",
     "section": "6.3 Reflection",
-    "text": "6.3 Reflection\n[Text"
+    "text": "6.3 Reflection\n[Text]"
   },
   {
     "objectID": "wk6.html#references",
     "href": "wk6.html#references",
     "title": "6  Introduction to Earth Engine",
     "section": "6.4 References",
-    "text": "6.4 References"
+    "text": "6.4 References\n\n\n\n\nGorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. “Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone.” Remote Sensing of Environment, Big Remotely Sensed Data: Tools, applications and experiences, 202 (December): 18–27. https://doi.org/10.1016/j.rse.2017.06.031."
   }
 ]
