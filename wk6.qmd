@@ -8,13 +8,21 @@ date: "2/27/2024"
 
 After the a week off from class, we were introduced to Google Earth Engine, the platform for remotely sensed data analysis which we will make our home for the remainder of the course. The number of specific tools and operations we learned about in Earth Engine is too great to share concisely in this learning diary format. For that reason, I will focus on what Earth Engine is and what makes it both unique and powerful as a spatial analysis platform.
 
-### The Basics
+### What is Earth Engine?
 
 Google Earth Engine is a high-performance geospatial analysis tool, with a particular focus on remote sensing, which was developed to allow researchers and other professionals to use high performance computing technologies in their work without requiring the requisite IT skill which has been required to take advantage of these resources in the past [@gorelickGoogleEarthEngine2017]. The nature of remotely sensed data - raster datasets covering large expanses of the world's surface - requires large computing resources to process at scale.
 
-Earth Engine satisfies these computational requriements by \[CONT HERE - PARARELL COMPUTING, SERVER SIDE, ETC...\]
+Earth Engine satisfies these computational requirements by utilising a technique called parallel computing, wherein computationally intensive tasks are split into independent sub-tasks and processed simultaneously on multiple CPUs [@gorelickGoogleEarthEngine2017]. The core idea behind the application's architecture then, is that processing happens server-side instead of on a local machine as GIS programmes have typically required. Users interface with Earth Engine using JavaScript or Python-enabled libraries.
+
+![The basic Earth Engine Architecture @gorelickGoogleEarthEngine2017](img/GEEArch.png)
+
+In addition to reducing the local computational power required to efficiently utilise remotely sensed data, Earth Engine claims its other distinct advantage as that of data access and management. Google provides a 'data catalogue' which contains petabytes of the most commonly used (and arguably important) remotely sensed datasets available [@campos-tabernerGlobalEstimationBiophysical2018]. In addition to being constantly updated, this catalogue also includes historical readings from many satellite platforms which, when combined with the use of the aforementioned parallel processing paradigm, makes temporal analysis of RS data much easier [@campos-tabernerGlobalEstimationBiophysical2018].
+
+![Samples of Earth Engine's Data Catalog @earthengine2019](img/Catalogue.bin.gif)
 
 ## Applications in Research
+
+\[CITE tamiminiaGoogleEarthEngine2020 AS INTRO OF MOST COMMON APPLICATIONS\]
 
 \[NOTE TO SELF (WIP) - TWO DIFFERENT PAPERS\]
 
