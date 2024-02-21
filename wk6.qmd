@@ -14,13 +14,15 @@ Google Earth Engine is a high-performance geospatial analysis tool, with a parti
 
 Earth Engine satisfies these computational requirements by utilising a technique called parallel computing, wherein computationally intensive tasks are split into independent sub-tasks and processed simultaneously on multiple CPUs [@gorelickGoogleEarthEngine2017]. The core idea behind the application's architecture then, is that processing happens server-side instead of on a local machine as GIS programmes have typically required. Users interface with Earth Engine using JavaScript or Python-enabled libraries.
 
-![The basic Earth Engine Architecture @gorelickGoogleEarthEngine2017](img/GEEArch.png)
+![The basic Earth Engine architecture - @gorelickGoogleEarthEngine2017](img/GEEArch.png){width="600"}
 
 In addition to reducing the local computational power required to efficiently utilise remotely sensed data, Earth Engine claims its other distinct advantage as that of data access and management. Google provides a 'data catalogue' which contains petabytes of the most commonly used (and arguably important) remotely sensed datasets available [@campos-tabernerGlobalEstimationBiophysical2018]. In addition to being constantly updated, this catalogue also includes historical readings from many satellite platforms which, when combined with the use of the aforementioned parallel processing paradigm, makes temporal analysis of RS data much easier [@campos-tabernerGlobalEstimationBiophysical2018].
 
-![Samples of Earth Engine's Data Catalog @earthengine2019](img/Catalogue.bin.gif)
+![Samples of Earth Engine's Data Catalog - @earthengine2019](img/Catalogue.bin.gif)
 
 ## Applications in Research
+
+Google Earth Engine has seen increasingly wide use in recent years, although many of the most common
 
 \[CITE tamiminiaGoogleEarthEngine2020 AS INTRO OF MOST COMMON APPLICATIONS\]
 

@@ -173,7 +173,7 @@ div.csl-indent {
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#the-basics" id="toc-the-basics" class="nav-link" data-scroll-target="#the-basics"><span class="header-section-number">6.1.1</span> The Basics</a></li>
+  <li><a href="#what-is-earth-engine" id="toc-what-is-earth-engine" class="nav-link" data-scroll-target="#what-is-earth-engine"><span class="header-section-number">6.1.1</span> What is Earth Engine?</a></li>
   </ul></li>
   <li><a href="#applications-in-research" id="toc-applications-in-research" class="nav-link" data-scroll-target="#applications-in-research"><span class="header-section-number">6.2</span> Applications in Research</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
@@ -216,13 +216,29 @@ div.csl-indent {
 <section id="summary" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
 <p>After the a week off from class, we were introduced to Google Earth Engine, the platform for remotely sensed data analysis which we will make our home for the remainder of the course. The number of specific tools and operations we learned about in Earth Engine is too great to share concisely in this learning diary format. For that reason, I will focus on what Earth Engine is and what makes it both unique and powerful as a spatial analysis platform.</p>
-<section id="the-basics" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="the-basics"><span class="header-section-number">6.1.1</span> The Basics</h3>
-<p>Google Earth Engine was developed to allow researchers and other professionals to use high performance computing technologies in their work without requiring the requisite IT skill which has been required to do so in the past <span class="citation" data-cites="gorelickGoogleEarthEngine2017">(<a href="#ref-gorelickGoogleEarthEngine2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span>.</p>
+<section id="what-is-earth-engine" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="what-is-earth-engine"><span class="header-section-number">6.1.1</span> What is Earth Engine?</h3>
+<p>Google Earth Engine is a high-performance geospatial analysis tool, with a particular focus on remote sensing, which was developed to allow researchers and other professionals to use high performance computing technologies in their work without requiring the requisite IT skill which has been required to take advantage of these resources in the past <span class="citation" data-cites="gorelickGoogleEarthEngine2017">(<a href="#ref-gorelickGoogleEarthEngine2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span>. The nature of remotely sensed data - raster datasets covering large expanses of the world’s surface - requires large computing resources to process at scale.</p>
+<p>Earth Engine satisfies these computational requirements by utilising a technique called parallel computing, wherein computationally intensive tasks are split into independent sub-tasks and processed simultaneously on multiple CPUs <span class="citation" data-cites="gorelickGoogleEarthEngine2017">(<a href="#ref-gorelickGoogleEarthEngine2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span>. The core idea behind the application’s architecture then, is that processing happens server-side instead of on a local machine as GIS programmes have typically required. Users interface with Earth Engine using JavaScript or Python-enabled libraries.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/GEEArch.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">The basic Earth Engine architecture <span class="citation" data-cites="gorelickGoogleEarthEngine2017">Gorelick et al. (<a href="#ref-gorelickGoogleEarthEngine2017" role="doc-biblioref">2017</a>)</span></figcaption>
+</figure>
+</div>
+<p>In addition to reducing the local computational power required to efficiently utilise remotely sensed data, Earth Engine claims its other distinct advantage as that of data access and management. Google provides a ‘data catalogue’ which contains petabytes of the most commonly used (and arguably important) remotely sensed datasets available <span class="citation" data-cites="campos-tabernerGlobalEstimationBiophysical2018">(<a href="#ref-campos-tabernerGlobalEstimationBiophysical2018" role="doc-biblioref">Campos-Taberner et al. 2018</a>)</span>. In addition to being constantly updated, this catalogue also includes historical readings from many satellite platforms which, when combined with the use of the aforementioned parallel processing paradigm, makes temporal analysis of RS data much easier <span class="citation" data-cites="campos-tabernerGlobalEstimationBiophysical2018">(<a href="#ref-campos-tabernerGlobalEstimationBiophysical2018" role="doc-biblioref">Campos-Taberner et al. 2018</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Catalogue.bin.gif" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Samples of Earth Engine’s Data Catalog <span class="citation" data-cites="earthengine2019">Earth Engine (<a href="#ref-earthengine2019" role="doc-biblioref">2019</a>)</span></figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="applications-in-research" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="applications-in-research"><span class="header-section-number">6.2</span> Applications in Research</h2>
+<p>Google Earth Engine has seen increasingly wide use in recent years, although many of the most common</p>
+<p>[CITE tamiminiaGoogleEarthEngine2020 AS INTRO OF MOST COMMON APPLICATIONS]</p>
 <p>[NOTE TO SELF (WIP) - TWO DIFFERENT PAPERS]</p>
 </section>
 <section id="reflection" class="level2" data-number="6.3">
@@ -234,6 +250,12 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-campos-tabernerGlobalEstimationBiophysical2018" class="csl-entry" role="listitem">
+Campos-Taberner, Manuel, Álvaro Moreno-Martínez, Francisco Javier García-Haro, Gustau Camps-Valls, Nathaniel P. Robinson, Jens Kattge, and Steven W. Running. 2018. <span>“Global <span>Estimation</span> of <span>Biophysical</span> <span>Variables</span> from <span>Google</span> <span>Earth</span> <span>Engine</span> <span>Platform</span>.”</span> <em>Remote Sensing</em> 10 (8): 1167. <a href="https://doi.org/10.3390/rs10081167">https://doi.org/10.3390/rs10081167</a>.
+</div>
+<div id="ref-earthengine2019" class="csl-entry" role="listitem">
+Earth Engine, Google. 2019. <span>“Our Latest Additions to the Earth Engine Data Catalog.”</span> <a href="https://medium.com/google-earth/our-latest-additions-to-the-earth-engine-data-catalog-ded9c563f676">https://medium.com/google-earth/our-latest-additions-to-the-earth-engine-data-catalog-ded9c563f676</a>.
+</div>
 <div id="ref-gorelickGoogleEarthEngine2017" class="csl-entry" role="listitem">
 Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google <span>Earth</span> <span>Engine</span>: <span>Planetary</span>-Scale Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em>, Big <span>Remotely</span> <span>Sensed</span> <span>Data</span>: Tools, applications and experiences, 202 (December): 18–27. <a href="https://doi.org/10.1016/j.rse.2017.06.031">https://doi.org/10.1016/j.rse.2017.06.031</a>.
 </div>
