@@ -22,11 +22,15 @@ In addition to reducing the local computational power required to efficiently ut
 
 ## Applications in Research
 
-Google Earth Engine has seen increasingly wide use in recent years, although many of the most common
+Google Earth Engine has seen increasingly wide use in recent years, although the most common characteristics of its applications, per @tamiminiaGoogleEarthEngine2020 are:
 
-\[CITE tamiminiaGoogleEarthEngine2020 AS INTRO OF MOST COMMON APPLICATIONS\]
+1.  The use of multi-temporal data
+2.  Use of data from optical sensor platforms, particularly Landsat and MODIS
+3.  Applications with a particular focus on phenoma in the natural environment.
 
-\[NOTE TO SELF (WIP) - TWO DIFFERENT PAPERS\]
+In particular, products like NDVI, land-cover, and forest change datasets were used in a substantial number of applications. Additionally, the application of machine learning techniques is becoming increasingly common [@tamiminiaGoogleEarthEngine2020].
+
+With that said, the two applications I'd like to further investigate are
 
 ## Reflection
 
