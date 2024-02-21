@@ -137,7 +137,7 @@
     "href": "wk6.html#reflection",
     "title": "6  Introduction to Earth Engine",
     "section": "6.3 Reflection",
-    "text": "6.3 Reflection\n[Text]"
+    "text": "6.3 Reflection\nAt a personal level, I have an interesting relationship with Google Earth Engine. The platform was my first exposure to geospatial science at large and it catalysed my interest in the topic. With that said, I was brought onto the research group in which I used Earth Engine because of my computer science background and as a result, taught myself much of what I know now. I’m excited, then, to learn about Earth Engine in a formal context and hopefully clarify many of the misunderstandings I inevitably generated on my earlier journey. Because of the fact that I was self-taught, I always found the JavaScript-based approach to GIS to be quite cumbersome and found QGIS much easier to learn and understand. With that said, reading the original papers on the origins of Earth Engine has me far more sold on its merits than I originally was when I started using the system. The computational power it grants users to is mind-boggling, and I am very much being literal when I say that.\nA topic of particular interest to me is that of Earth Engine and its use in machine learning. Machine learning broadly is a topic which I have spent very little time focusing on and until this week’s lecture, I wasn’t aware that it was one of the main selling points of Earth Engine. It’s something I’d like to explore down the line, be in it a dissertation or personal project."
   },
   {
     "objectID": "wk6.html#references",
