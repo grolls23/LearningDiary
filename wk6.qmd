@@ -30,7 +30,11 @@ Google Earth Engine has seen increasingly wide use in recent years, although the
 
 In particular, products like NDVI, land-cover, and forest change datasets were used in a substantial number of applications. Additionally, the application of machine learning techniques is becoming increasingly common [@tamiminiaGoogleEarthEngine2020].
 
-With that said, the two applications I'd like to further investigate are
+With that said, the two applications I'd like to further investigate are the use of Landsat imagery for population mapping and urban change over time from @patelMultitemporalSettlementPopulation2015 and monitoring changes in heat island effects as a result of land cover changes from @ravanelliMonitoringImpactLand2018.
+
+@patelMultitemporalSettlementPopulation2015 measure urban change over the 40-year lifespan of the Landsat programme by extracting urban areas from Landsat data. To do this, they calculate the Normalized Difference Spectral Vector (NDSV), which a vector containing all possible normalised indexes of band pairs for a total of 30. They write that urban areas have a unique NDSV signature and can thus be used to identify urban change. From that point, they apply a random forest model to estimate area populations. As the authors themselves write, Earth Engine is the obvious tool to use in this context as it allows for the efficient processing of multi-temporal RS data, making it perfect for analysing urban change over time.
+
+@ravanelliMonitoringImpactLand2018
 
 ## Reflection
 
