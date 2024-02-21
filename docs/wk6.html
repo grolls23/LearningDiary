@@ -223,23 +223,30 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/GEEArch.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">The basic Earth Engine architecture <span class="citation" data-cites="gorelickGoogleEarthEngine2017">Gorelick et al. (<a href="#ref-gorelickGoogleEarthEngine2017" role="doc-biblioref">2017</a>)</span></figcaption>
+<figcaption class="figure-caption">The basic Earth Engine architecture - <span class="citation" data-cites="gorelickGoogleEarthEngine2017">Gorelick et al. (<a href="#ref-gorelickGoogleEarthEngine2017" role="doc-biblioref">2017</a>)</span></figcaption>
 </figure>
 </div>
 <p>In addition to reducing the local computational power required to efficiently utilise remotely sensed data, Earth Engine claims its other distinct advantage as that of data access and management. Google provides a ‘data catalogue’ which contains petabytes of the most commonly used (and arguably important) remotely sensed datasets available <span class="citation" data-cites="campos-tabernerGlobalEstimationBiophysical2018">(<a href="#ref-campos-tabernerGlobalEstimationBiophysical2018" role="doc-biblioref">Campos-Taberner et al. 2018</a>)</span>. In addition to being constantly updated, this catalogue also includes historical readings from many satellite platforms which, when combined with the use of the aforementioned parallel processing paradigm, makes temporal analysis of RS data much easier <span class="citation" data-cites="campos-tabernerGlobalEstimationBiophysical2018">(<a href="#ref-campos-tabernerGlobalEstimationBiophysical2018" role="doc-biblioref">Campos-Taberner et al. 2018</a>)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Catalogue.bin.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Samples of Earth Engine’s Data Catalog <span class="citation" data-cites="earthengine2019">Earth Engine (<a href="#ref-earthengine2019" role="doc-biblioref">2019</a>)</span></figcaption>
+<figcaption class="figure-caption">Samples of Earth Engine’s Data Catalog - <span class="citation" data-cites="earthengine2019">Earth Engine (<a href="#ref-earthengine2019" role="doc-biblioref">2019</a>)</span></figcaption>
 </figure>
 </div>
 </section>
 </section>
 <section id="applications-in-research" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="applications-in-research"><span class="header-section-number">6.2</span> Applications in Research</h2>
-<p>Google Earth Engine has seen increasingly wide use in recent years, although many of the most common</p>
-<p>[CITE tamiminiaGoogleEarthEngine2020 AS INTRO OF MOST COMMON APPLICATIONS]</p>
-<p>[NOTE TO SELF (WIP) - TWO DIFFERENT PAPERS]</p>
+<p>Google Earth Engine has seen increasingly wide use in recent years, although the most common characteristics of its applications, per <span class="citation" data-cites="tamiminiaGoogleEarthEngine2020">Tamiminia et al. (<a href="#ref-tamiminiaGoogleEarthEngine2020" role="doc-biblioref">2020</a>)</span> are:</p>
+<ol type="1">
+<li>The use of multi-temporal data</li>
+<li>Use of data from optical sensor platforms, particularly Landsat and MODIS</li>
+<li>Applications with a particular focus on phenoma in the natural environment.</li>
+</ol>
+<p>In particular, products like NDVI, land-cover, and forest change datasets were used in a substantial number of applications. Additionally, the application of machine learning techniques is becoming increasingly common <span class="citation" data-cites="tamiminiaGoogleEarthEngine2020">(<a href="#ref-tamiminiaGoogleEarthEngine2020" role="doc-biblioref">Tamiminia et al. 2020</a>)</span>.</p>
+<p>With that said, the two applications I’d like to further investigate are the use of Landsat imagery for population mapping and urban change over time from <span class="citation" data-cites="patelMultitemporalSettlementPopulation2015">Patel et al. (<a href="#ref-patelMultitemporalSettlementPopulation2015" role="doc-biblioref">2015</a>)</span> and monitoring changes in heat island effects as a result of land cover changes from <span class="citation" data-cites="ravanelliMonitoringImpactLand2018">Ravanelli et al. (<a href="#ref-ravanelliMonitoringImpactLand2018" role="doc-biblioref">2018</a>)</span>.</p>
+<p><span class="citation" data-cites="patelMultitemporalSettlementPopulation2015">Patel et al. (<a href="#ref-patelMultitemporalSettlementPopulation2015" role="doc-biblioref">2015</a>)</span> measure urban change over the 40-year lifespan of the Landsat programme by extracting urban areas from Landsat data. To do this, they calculate the Normalized Difference Spectral Vector (NDSV), which a vector containing all possible normalised indexes of band pairs for a total of 30. They write that urban areas have a unique NDSV signature and can thus be used to identify urban change. From that point, they apply a random forest model to estimate area populations. As the authors themselves write, Earth Engine is the obvious tool to use in this context as it allows for the efficient processing of multi-temporal RS data, making it perfect for analysing urban change over time.</p>
+<p><span class="citation" data-cites="ravanelliMonitoringImpactLand2018">Ravanelli et al. (<a href="#ref-ravanelliMonitoringImpactLand2018" role="doc-biblioref">2018</a>)</span></p>
 </section>
 <section id="reflection" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
@@ -258,6 +265,15 @@ Earth Engine, Google. 2019. <span>“Our Latest Additions to the Earth Engine Da
 </div>
 <div id="ref-gorelickGoogleEarthEngine2017" class="csl-entry" role="listitem">
 Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google <span>Earth</span> <span>Engine</span>: <span>Planetary</span>-Scale Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em>, Big <span>Remotely</span> <span>Sensed</span> <span>Data</span>: Tools, applications and experiences, 202 (December): 18–27. <a href="https://doi.org/10.1016/j.rse.2017.06.031">https://doi.org/10.1016/j.rse.2017.06.031</a>.
+</div>
+<div id="ref-patelMultitemporalSettlementPopulation2015" class="csl-entry" role="listitem">
+Patel, Nirav N., Emanuele Angiuli, Paolo Gamba, Andrea Gaughan, Gianni Lisini, Forrest R. Stevens, Andrew J. Tatem, and Giovanna Trianni. 2015. <span>“Multitemporal Settlement and Population Mapping from <span>Landsat</span> Using <span>Google</span> <span>Earth</span> <span>Engine</span>.”</span> <em>International Journal of Applied Earth Observation and Geoinformation</em> 35 (March): 199–208. <a href="https://doi.org/10.1016/j.jag.2014.09.005">https://doi.org/10.1016/j.jag.2014.09.005</a>.
+</div>
+<div id="ref-ravanelliMonitoringImpactLand2018" class="csl-entry" role="listitem">
+Ravanelli, Roberta, Andrea Nascetti, Raffaella Valeria Cirigliano, Clarissa Di Rico, Giovanni Leuzzi, Paolo Monti, and Mattia Crespi. 2018. <span>“Monitoring the <span>Impact</span> of <span>Land</span> <span>Cover</span> <span>Change</span> on <span>Surface</span> <span>Urban</span> <span>Heat</span> <span>Island</span> Through <span>Google</span> <span>Earth</span> <span>Engine</span>: <span>Proposal</span> of a <span>Global</span> <span>Methodology</span>, <span>First</span> <span>Applications</span> and <span>Problems</span>.”</span> <em>Remote Sensing</em> 10 (9): 1488. <a href="https://doi.org/10.3390/rs10091488">https://doi.org/10.3390/rs10091488</a>.
+</div>
+<div id="ref-tamiminiaGoogleEarthEngine2020" class="csl-entry" role="listitem">
+Tamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush, Sarina Adeli, and Brian Brisco. 2020. <span>“Google <span>Earth</span> <span>Engine</span> for Geo-Big Data Applications: <span>A</span> Meta-Analysis and Systematic Review.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 164 (June): 152–70. <a href="https://doi.org/10.1016/j.isprsjprs.2020.04.001">https://doi.org/10.1016/j.isprsjprs.2020.04.001</a>.
 </div>
 </div>
 </section>
