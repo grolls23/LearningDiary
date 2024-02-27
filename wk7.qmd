@@ -3,3 +3,15 @@ title: "Classification of Remotely Sensed Data"
 author: "Gavin Rolls"
 date: "3/05/2024"
 ---
+
+## Summary
+
+\[Text\]
+
+## Applications in Research
+
+\[Text\]
+
+## Reflection
+
+\[Text\]
