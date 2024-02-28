@@ -6,6 +6,32 @@ date: "3/05/2024"
 
 ## Summary
 
+Our focus in Remote Sensing this week was on classifying remotely sensed data. Broadly speaking, this refers to dividing areas of a remotely sensed image into discrete categories, often at the pixel or sub-pixel level. Although we discussed a number of examples of classifying EO data, such as a study which mapped forest cover change and classified areas with respect to their forest loss/gain [@hansenHighResolutionGlobalMaps2013], most of this week's lecture was focused on methods of classification. I will detail
+
+### Classification Trees
+
+Classification trees are a data structure which allows a given data point to be classified based on its attributes. Not unlike a flowchart, each node of the classification tree poses a question about a data point and each linkage between nodes represents an answer to that question. Leaf nodes represent the classifications into which a given data point is being sorted
+
+![A diagram illustrating an example of a classification tree - @ibmWhatDecisionTree](img/Decision-Tree.png){width="600"}
+
+What distinguishes a classification tree from a flowchart is that there exists well-defined methods to establish their structure, based on a set of predictor variables, or attributes of each data point. From the root node, data is split on a given attribute (and at a given value if the data is continuous) which minimizes the impurity of the resulting set of points at each child node. This process is then repeated at each node to break the data into more granular categories [@lohClassificationRegressionTrees2011].
+
+Impurity in this context refers to the homogeneity of the sets resulting from a split, with respect to the levels of their other predictor variables [@laber2019]. As a lose example, if splitting a dataset depending on if its attribute $X_1$ is greater or less than five, yields datasets which have a higher 'purity', or similarity than whether or not boolean attribute $X_2$ is true or false, then the node splitting $X_1$ will be farther up the tree.
+
+#### Side-note: Overfitting
+
+It's possible to create a classification tree that subsets data over and over until each category represents a single data point or a handful of extremely homogeneous data points. Such a structure yields a tree which over-fits data based on this specific input dataset and is unlikely to be more generalisable. Two methods to limit this include stopping the further sub-setting of one's classification tree at a set number of nodes, or by using a method known as weakest link pruning. Without diving into the particular details of the method, its goal is to identify and remove the weakest nodes, that is, nodes which contribute the least to separating data points out into distinct classes.
+
+### Regression Trees
+
+Regression trees are like classification trees, but with the key difference that
+
+### Random Forests
+
+\[Text\]
+
+### Support Vector Machine (SVM)
+
 \[Text\]
 
 ## Applications in Research
