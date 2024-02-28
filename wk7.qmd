@@ -36,7 +36,7 @@ The broad motivation for random forests are that they reduce the risk of over-fi
 
 ### Support Vector Machine (SVM)
 
-In a departure from the decision tree paradigm, support vector machines
+In a departure from the decision tree paradigm, support vector machines utilise not a tree structure to classify objects but instead divide options within the feature space they occupy [@pisner2020]. In a two-dimensional feature space, this is not unlike linear regression wherein a line is drawn in the two-dimensional plane which separates a set of observations into categories based on their $x$ and $y$ values. That said, it does not achieve this by minimising the sum of squared residuals. Instead, it identifies the line that maximises the margin (which can be thought of as empty space) between the classes it separates. The points on the boundary of this margin are referred to as 'support vectors'. Support Vector Machines can also be designed to allow a small number of data points to be misclassified. Although counter-intuitive, allowing errors can make one's model more generalisable [@pisner2020].
 
 ## Applications in Research
 
