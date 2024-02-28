@@ -44,11 +44,9 @@ In a departure from the decision tree paradigm, support vector machines utilise 
 
 The importance of classification in remote sensing makes it a near ubiquitous phenomena in papers using remote sensing methods. With that said, I'd like to focus on one paper that makes specific use of random forests for classification, and another which deploys support vector machines.
 
-Unlike @hansenHighResolutionGlobalMaps2013, @linhui2021 make use of random forests not to identify changes in forest cover but to classify forests based on their type. In order to classify forest cover in the Maoershan Nature Reserve (Heilonjiang Province, China), they used imagery from the Gaofen-2 satellite which, after being atmospherically corrected, was fed into a random forest program with 650 trees, with no pruning applied. Six forest types were identified which included 'Scotch Pine Forest', 'Oak Forest', and 'Mixed Wood', to name a few.
+Unlike @hansenHighResolutionGlobalMaps2013, @linhui2021 make use of random forests not to identify changes in forest cover but to classify forests based on their type. In order to classify forest cover in the Maoershan Nature Reserve (Heilonjiang Province, China), they used imagery from the Gaofen-2 satellite which, after being atmospherically corrected, was fed into a random forest program with 650 trees, with no pruning applied. Six forest types were identified which included 'Scotch Pine Forest', 'Oak Forest', and 'Mixed Wood', to name a few. Interestingly, @linhui2021 also applied a support vector machine classifier to the same dataset, which yielded 79.86% predictive accuracy as opposed to the 83.16% accuracy reached by the random forest method.
 
-Interestingly, @linhui2021 also applied a support vector machine classifier to the same dataset, which yielded 79.86% predictive accuracy as opposed to the 83.16% accuracy reached by the random forest method.
-
-In comparison, @halder2022 use a support vector machine as the primary
+In comparison, @halder2022 use a support vector machine as the primary method of generating a land use and land cover (LULC) classifier to investigate the environmental impact of irrigation products in the Shali reservoir area of Eastern India. They generate six LULC maps ranging from 1995 to 2020 derived from the Landsat platform, before applying cellular automata methods to predict future land use change in the area based on the results of those classifications. In addition to traditional validation methods, @halder2022 also use population, agricultural data, and other non-remotely sensed datasets to validate the classifications created through their SVM classifier.
 
 ## Reflection
 
