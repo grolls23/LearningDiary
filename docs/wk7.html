@@ -225,7 +225,7 @@ div.csl-indent {
 
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
-<p>Our focus in Remote Sensing this week was on classifying remotely sensed data. Broadly speaking, this refers to dividing areas of a remotely sensed image into discrete categories, often at the pixel or sub-pixel level. Although we discussed a number of examples of classifying EO data, such as a study which mapped forest cover change and classified areas with respect to their forest loss/gain <span class="citation" data-cites="hansenHighResolutionGlobalMaps2013">(<a href="#ref-hansenHighResolutionGlobalMaps2013" role="doc-biblioref">Hansen et al. 2013</a>)</span>, most of this week’s lecture was focused on methods of classification. I will detail</p>
+<p>Our focus in Remote Sensing this week was on classifying remotely sensed data. Broadly speaking, this refers to dividing areas of a remotely sensed image into discrete categories, often at the pixel or sub-pixel level. Although we discussed a number of examples of classifying EO data, such as a study which mapped forest cover change and classified areas with respect to their forest loss/gain <span class="citation" data-cites="hansenHighResolutionGlobalMaps2013">(<a href="#ref-hansenHighResolutionGlobalMaps2013" role="doc-biblioref">Hansen et al. 2013</a>)</span>, most of this week’s lecture was focused on methods of classification, which I will detail below.</p>
 <section id="classification-trees" class="level3" data-number="7.1.1">
 <h3 data-number="7.1.1" class="anchored" data-anchor-id="classification-trees"><span class="header-section-number">7.1.1</span> Classification Trees</h3>
 <p>Classification trees are a data structure which allows a given data point to be classified based on its attributes. Not unlike a flowchart, each node of the classification tree poses a question about a data point and each linkage between nodes represents an answer to that question. Leaf nodes represent the classifications into which a given data point is being sorted</p>
@@ -248,7 +248,7 @@ div.csl-indent {
 </section>
 <section id="random-forests" class="level3" data-number="7.1.3">
 <h3 data-number="7.1.3" class="anchored" data-anchor-id="random-forests"><span class="header-section-number">7.1.3</span> Random Forests</h3>
-<p>A random forest is an extension of the classification and regression tree methods, but relies on a large number of randomly generated trees, as opposed to a single decision tree <span class="citation" data-cites="biau2016">(<a href="#ref-biau2016" role="doc-biblioref">Biau and Scornet 2016</a>)</span>. Trees are randomised because, while constructed according to the rule-sets defined above, each tree is built according to a random subset of datapoints as well as a subset of data point features (attributes). Additionally, data-points can be used in multiple trees in the forest as well as multiple times within a single tree <span class="citation" data-cites="biau2016">(<a href="#ref-biau2016" role="doc-biblioref">Biau and Scornet 2016</a>)</span>. The final classification is determined by the category which the highest quantity of trees in the forest assigned to the particular data point.</p>
+<p>A random forest is an extension of the classification and regression tree methods, but relies on a large number of randomly generated trees, as opposed to a single decision tree <span class="citation" data-cites="biau2016">(<a href="#ref-biau2016" role="doc-biblioref">Biau and Scornet 2016</a>)</span>. Trees are randomised because, while constructed according to the rule-sets defined above, each tree is built according to a random subset of data points as well as a subset of data point features (attributes). Additionally, data-points can be used in multiple trees in the forest as well as multiple times within a single tree <span class="citation" data-cites="biau2016">(<a href="#ref-biau2016" role="doc-biblioref">Biau and Scornet 2016</a>)</span>. The final classification is determined by the category which the highest quantity of trees in the forest assigned to the particular data point.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Random_Forest.png" class="img-fluid figure-img" width="700"></p>
@@ -260,11 +260,17 @@ div.csl-indent {
 <section id="support-vector-machine-svm" class="level3" data-number="7.1.4">
 <h3 data-number="7.1.4" class="anchored" data-anchor-id="support-vector-machine-svm"><span class="header-section-number">7.1.4</span> Support Vector Machine (SVM)</h3>
 <p>In a departure from the decision tree paradigm, support vector machines utilise not a tree structure to classify objects but instead divide options within the feature space they occupy <span class="citation" data-cites="pisner2020">(<a href="#ref-pisner2020" role="doc-biblioref">Pisner and Schnyer 2020</a>)</span>. In a two-dimensional feature space, this is not unlike linear regression wherein a line is drawn in the two-dimensional plane which separates a set of observations into categories based on their <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> values. That said, it does not achieve this by minimising the sum of squared residuals. Instead, it identifies the line that maximises the margin (which can be thought of as empty space) between the classes it separates. The points on the boundary of this margin are referred to as ‘support vectors’. Support Vector Machines can also be designed to allow a small number of data points to be misclassified. Although counter-intuitive, allowing errors can make one’s model more generalisable <span class="citation" data-cites="pisner2020">(<a href="#ref-pisner2020" role="doc-biblioref">Pisner and Schnyer 2020</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/SVM.jpg" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">An example of a support vector margin separating data into two classifications - <span class="citation" data-cites="mathworks">MathWorks (<a href="#ref-mathworks" role="doc-biblioref">n.d.</a>)</span></figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="applications-in-research" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="applications-in-research"><span class="header-section-number">7.2</span> Applications in Research</h2>
-<p>[Text]</p>
+<p>The importance of classification in remote sensing makes it a near ubiquitous phenomena in papers using remote sensing methods. With that said, I’d like to focus on [PAPERS HERE].</p>
 </section>
 <section id="reflection" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
@@ -286,6 +292,9 @@ Laber, Eduardo, and Lucas Murtinho. 2019. <span>“Minimization of Gini Impurity
 </div>
 <div id="ref-lohClassificationRegressionTrees2011" class="csl-entry" role="listitem">
 Loh, Wei-Yin. 2011. <span>“Classification and Regression Trees.”</span> <em>WIREs Data Mining and Knowledge Discovery</em> 1 (1): 14–23. <a href="https://doi.org/10.1002/widm.8">https://doi.org/10.1002/widm.8</a>.
+</div>
+<div id="ref-mathworks" class="csl-entry" role="listitem">
+MathWorks. n.d. <span>“Support Vector Machine (SVM).”</span> <a href="https://www.mathworks.com/discovery/support-vector-machine.html">https://www.mathworks.com/discovery/support-vector-machine.html</a>.
 </div>
 <div id="ref-pisner2020" class="csl-entry" role="listitem">
 Pisner, Derek A., and David M. Schnyer. 2020. <span>“Chapter 6 - Support Vector Machine.”</span> In, edited by Andrea Mechelli and Sandra Vieira, 101–21. Academic Press. <a href="https://doi.org/10.1016/B978-0-12-815739-8.00006-7">https://doi.org/10.1016/B978-0-12-815739-8.00006-7</a>.
