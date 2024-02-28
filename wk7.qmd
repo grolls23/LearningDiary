@@ -36,13 +36,19 @@ The broad motivation for random forests are that they reduce the risk of over-fi
 
 ### Support Vector Machine (SVM)
 
-In a departure from the decision tree paradigm, support vector machines utilise not a tree structure to classify objects but instead divide options within the feature space they occupy [@pisner2020]. In a two-dimensional feature space, this is not unlike linear regression wherein a line is drawn in the two-dimensional plane which separates a set of observations into categories based on their $x$ and $y$ values. That said, it does not achieve this by minimising the sum of squared residuals. Instead, it identifies the line that maximises the margin (which can be thought of as empty space) between the classes it separates. The points on the boundary of this margin are referred to as 'support vectors'. Support Vector Machines can also be designed to allow a small number of data points to be misclassified. Although counter-intuitive, allowing errors can make one's model more generalisable [@pisner2020].
+In a departure from the decision tree paradigm, support vector machines utilise not a tree structure to classify objects but instead divide options within the feature space they occupy [@pisner2020]. In a two-dimensional feature space, this is not unlike linear regression wherein a line is drawn in the two-dimensional plane which separates a set of observations into categories based on their $x$ and $y$ values. That said, it does not achieve this by minimising the sum of squared residuals. Instead, it identifies the line that maximises the margin (which can be thought of as empty space) between the classes it separates. The points on the boundary of this margin are referred to as 'support vectors'. support vector machines can also be designed to allow a small number of data points to be misclassified. Although counter-intuitive, allowing errors can make one's model more generalisable [@pisner2020].
 
 ![An example of a support vector margin separating data into two classifications - @mathworks](img/SVM.jpg){width="600"}
 
 ## Applications in Research
 
-The importance of classification in remote sensing makes it a near ubiquitous phenomena in papers using remote sensing methods. With that said, I'd like to focus on \[PAPERS HERE\].
+The importance of classification in remote sensing makes it a near ubiquitous phenomena in papers using remote sensing methods. With that said, I'd like to focus on one paper that makes specific use of random forests for classification, and another which deploys support vector machines.
+
+Unlike @hansenHighResolutionGlobalMaps2013, @linhui2021 make use of random forests not to identify changes in forest cover but to classify forests based on their type. In order to classify forest cover in the Maoershan Nature Reserve (Heilonjiang Province, China), they used imagery from the Gaofen-2 satellite which, after being atmospherically corrected, was fed into a random forest program with 650 trees, with no pruning applied. Six forest types were identified which included 'Scotch Pine Forest', 'Oak Forest', and 'Mixed Wood', to name a few.
+
+Interestingly, @linhui2021 also applied a support vector machine classifier to the same dataset, which yielded 79.86% predictive accuracy as opposed to the 83.16% accuracy reached by the random forest method.
+
+In comparison, @halder2022 use a support vector machine as the primary
 
 ## Reflection
 
