@@ -20,7 +20,7 @@ Impurity in this context refers to the homogeneity of the sets resulting from a 
 
 ### Regression Trees
 
-Regression trees are like classification trees, but with the key difference that the resulting data does not fall into classifications, or bins, but instead reflect continuous output variables [@lohClassificationRegressionTrees2011]. This is helpful for situations where the relationship between variables be locally linear but is broadly disjoint across the range of the predictor variable. A regression tree, then, allows data to be split repeatedly at the point at which the subsets generated have the lowest sum of squared residuals (SSR).
+Regression trees are like classification trees, but with the key difference that the resulting data does not fall into classifications, or bins, but instead reflect continuous output variables [@lohClassificationRegressionTrees2011]. This is helpful for situations where the relationship between variables may be locally linear but is broadly disjoint across the range of the predictor variable. A regression tree, then, allows data to be split repeatedly at the point at which the subsets generated have the lowest sum of squared residuals (SSR).
 
 #### Side-note: Overfitting
 
