@@ -1,0 +1,19 @@
+---
+title: "Advanced Classification and Accuracy Assesment"
+author: "Gavin Rolls"
+date: "3/12/2024"
+---
+
+## Summary
+
+\[WIP\]
+
+## Applications in Research
+
+\[WIP\]
+
+## Reflection
+
+\[WIP\]
+
+## References
