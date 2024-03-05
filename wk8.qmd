@@ -10,9 +10,7 @@ A continuation of last week's look into the classification of remotely sensed im
 
 ### Object Based Image Analysis
 
-Object based image analysis is a
-
-\[CITE BLASCHKE\]
+Object based image analysis is a method of for analysing remotely sensed data at the multi-pixel or 'superpixel' level by identifying discrete physical objects (buildings, small bodies of water, fields, etc...) which can then be classified at object level as opposed to considering pixels in isolation [@blaschke2010]. The most common way of doing this is an algorithm known as Simple Liear Iterative Clustering, which partitions the image into a grid before iteratively moving the centre of each cell to best capture the pixels which are most homogeneous with the rest of the chunk, in a manner similar to k-means clustering [@achanta2012]. This algorithm attempts to keep objects both spatially and spectrally compact, meaning they retain consistent appearance and a small physical distance from end to end.
 
 ### Sub-Pixel Analysis
 
