@@ -14,11 +14,18 @@ Object based image analysis is a method of for analysing remotely sensed data at
 
 ### Sub-Pixel Analysis
 
-In contrast to analysis at the multi-pixel analysis, sub-pixel analysis concerns the classification of individual pixels when they may fall into multiple land-cover categories. This is particularly important for satellite imagery taken at a low spatial resolution, where individual pixels represent a larger share of land area [@du2014]. A classic method for sub-pixel analysis is multiple endmember spectral mixture analysis, also known as MESMA, which attempts to identify the proportion of each landcover type within each pixel. To do this, each pixel's spectral signature is compared against endmembers (spectral representations of landcover types - often including soil, vegetation, and water) to identify the endmembers which most contributed to the pixel's 'mixed signature' [@quintano2013]. This process is known as unmixing - basically breaking a pixel down into its constituent landcover components.
+In contrast to analysis at the multi-pixel analysis, sub-pixel analysis concerns the classification of individual pixels when they may fall into multiple land-cover categories. This is particularly important for satellite imagery taken at a low spatial resolution, where individual pixels represent a larger share of land area [@du2014]. A classic method for sub-pixel analysis is multiple endmember spectral mixture analysis, also known as MESMA, which attempts to identify the proportion of each landcover type within each pixel. To do this, each pixel's spectral signature is compared against endmembers (spectral representations of landcover types - often but not always soil, vegetation, and impervious surfaces) to identify the endmembers which most contributed to the pixel's 'mixed signature' [@quintano2013]. This process is known as unmixing - basically breaking a pixel down into its constituent landcover components.
 
-### Accuracy Assesment
+### Accuracy Assessment
 
-The
+The key issue we focused on in lecture (and which I would like to focus on in this review) is that of determining how accurately a landcover classification algorithm has actually divided an image. There are two key accuracy metrics to consider:
+
+1.  **Producer Accuracy**\
+    \[TEXT\]
+2.  **User's Accuracy\
+    **\[Text\]
+
+\[Continue here.\]
 
 ## Applications in Research
 
