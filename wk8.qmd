@@ -6,7 +6,17 @@ date: "3/12/2024"
 
 ## Summary
 
-\[WIP\]
+A continuation of last week's look into the classification of remotely sensed imaging, we focused this weekend on a handful of more advanced methods, with a particular focus on determining the accuracy of classifications. I will briefly touch on some of those methods before taking the majority of the summary to talk about accuracy asssement
+
+### Object Based Image Analysis
+
+Object based image analysis is a
+
+\[CITE BLASCHKE\]
+
+### Sub-Pixel Analysis
+
+### Accuracy Assesment
 
 ## Applications in Research
 
