@@ -176,6 +176,12 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Advanced Classification and Accuracy Assesment</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -236,7 +242,7 @@ div.csl-indent {
 <p>Our focus in Remote Sensing this week was on classifying remotely sensed data. Broadly speaking, this refers to dividing areas of a remotely sensed image into discrete categories, often at the pixel or sub-pixel level. Although we discussed a number of examples of classifying EO data, such as a study which mapped forest cover change and classified areas with respect to their forest loss/gain <span class="citation" data-cites="hansenHighResolutionGlobalMaps2013">(<a href="#ref-hansenHighResolutionGlobalMaps2013" role="doc-biblioref">Hansen et al. 2013</a>)</span>, most of this week’s lecture was focused on methods of classification, which I will detail below.</p>
 <section id="classification-trees" class="level3" data-number="7.1.1">
 <h3 data-number="7.1.1" class="anchored" data-anchor-id="classification-trees"><span class="header-section-number">7.1.1</span> Classification Trees</h3>
-<p>Classification trees are a data structure which allows a given data point to be classified based on its attributes. Not unlike a flowchart, each node of the classification tree poses a question about a data point and each linkage between nodes represents an answer to that question. Leaf nodes represent the classifications into which a given data point is being sorted</p>
+<p>Classification trees are a data structure which allows a given data point to be classified based on its attributes. Not unlike a flowchart, each node of the classification tree poses a question about a data point and each linkage between nodes represents an answer to those questions. Leaf nodes represent the classifications into which a given data point is being sorted.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Decision-Tree.png" class="img-fluid figure-img" width="600"></p>
@@ -244,7 +250,7 @@ div.csl-indent {
 </figure>
 </div>
 <p>What distinguishes a classification tree from a flowchart is that there exists a well-defined method to establish their structure, based on a set of predictor variables, or attributes of each data point. From the root node, data is split on a given attribute (and at a given value if the data is continuous) which minimizes the impurity of the resulting set of points at each child node. This process is then repeated at each node to break the data into more granular categories <span class="citation" data-cites="lohClassificationRegressionTrees2011">(<a href="#ref-lohClassificationRegressionTrees2011" role="doc-biblioref">Loh 2011</a>)</span>.</p>
-<p>Impurity in this context refers to the homogeneity of the sets resulting from a split, with respect to the levels of their other predictor variables <span class="citation" data-cites="laber2019">(<a href="#ref-laber2019" role="doc-biblioref">Laber and Murtinho 2019</a>)</span>. As a lose example, if splitting a dataset depending on if its attribute <span class="math inline">\(X_1\)</span> is greater or less than five, yields datasets which have a higher ‘purity’, or similarity than whether or not boolean attribute <span class="math inline">\(X_2\)</span> is true or false, then the node splitting <span class="math inline">\(X_1\)</span> will be farther up the tree.</p>
+<p>Impurity in this context refers to the homogeneity of the sets resulting from a split, with respect to the levels of their other predictor variables <span class="citation" data-cites="laber2019">(<a href="#ref-laber2019" role="doc-biblioref">Laber and Murtinho 2019</a>)</span>. As a lose example, if splitting a dataset depending on if its attribute <span class="math inline">\(X_1\)</span> is greater or less than five, yields datasets which have a higher ‘purity’, or similarity than whether or not boolean attribute <span class="math inline">\(X_2\)</span> is true or false, then the node splitting <span class="math inline">\(X_1\)</span> will be closer to the root of the tree.</p>
 </section>
 <section id="regression-trees" class="level3" data-number="7.1.2">
 <h3 data-number="7.1.2" class="anchored" data-anchor-id="regression-trees"><span class="header-section-number">7.1.2</span> Regression Trees</h3>
@@ -267,7 +273,7 @@ div.csl-indent {
 </section>
 <section id="support-vector-machine-svm" class="level3" data-number="7.1.4">
 <h3 data-number="7.1.4" class="anchored" data-anchor-id="support-vector-machine-svm"><span class="header-section-number">7.1.4</span> Support Vector Machine (SVM)</h3>
-<p>In a departure from the decision tree paradigm, support vector machines utilise not a tree structure to classify objects but instead divide options within the feature space they occupy <span class="citation" data-cites="pisner2020">(<a href="#ref-pisner2020" role="doc-biblioref">Pisner and Schnyer 2020</a>)</span>. In a two-dimensional feature space, this is not unlike linear regression wherein a boundary is drawn in the two-dimensional plane which separates a set of observations into categories based on their <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> values. That said, it does not achieve this by minimising the sum of squared residuals. Instead, it identifies the line that maximises the margin (which can be thought of as empty space) between the classes it separates. The points on the boundary of this margin are referred to as ‘support vectors’. support vector machines can also be designed to allow a small number of data points to be misclassified. Although counter-intuitive, allowing errors can make one’s model more generalisable <span class="citation" data-cites="pisner2020">(<a href="#ref-pisner2020" role="doc-biblioref">Pisner and Schnyer 2020</a>)</span>.</p>
+<p>In a departure from the decision tree paradigm, support vector machines utilise not a tree structure to classify objects but instead divide options within the feature space they occupy <span class="citation" data-cites="pisner2020">(<a href="#ref-pisner2020" role="doc-biblioref">Pisner and Schnyer 2020</a>)</span>. In a two-dimensional feature space, this is not unlike linear regression wherein a boundary is drawn in the two-dimensional plane based on a set of observations. That said, it does not identify this line by minimising the sum of squared residuals. Instead, it identifies the line that maximises the margin (which can be thought of as empty space) between the classes (groups) it separates. The points on the boundary of this margin are referred to as ‘support vectors’. support vector machines can also be designed to allow a small number of data points to be misclassified. Although counter-intuitive, allowing errors can make one’s model more generalisable <span class="citation" data-cites="pisner2020">(<a href="#ref-pisner2020" role="doc-biblioref">Pisner and Schnyer 2020</a>)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/SVM.jpg" class="img-fluid figure-img" width="600"></p>

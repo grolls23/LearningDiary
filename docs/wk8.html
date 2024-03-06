@@ -51,6 +51,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./wk9.html" rel="next">
 <link href="./wk7.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -175,6 +176,12 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Advanced Classification and Accuracy Assesment</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -232,17 +239,17 @@ div.csl-indent {
 
 <section id="summary" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
-<p>A continuation of last week’s look into the classification of remotely sensed imaging, we focused this weekend on a handful of more advanced methods, with a particular focus on determining the accuracy of classifications. I will briefly touch on some of those methods before taking the majority of the summary to talk about accuracy asssement</p>
+<p>A continuation of last week’s look into the classification of remotely sensed imaging, we focused this week on a handful of more advanced methods, with a particular focus on determining the accuracy of classifications. I will briefly touch on some of those methods before taking the majority of the summary to talk about accuracy assessment.</p>
 <section id="object-based-image-analysis" class="level3" data-number="8.1.1">
 <h3 data-number="8.1.1" class="anchored" data-anchor-id="object-based-image-analysis"><span class="header-section-number">8.1.1</span> Object Based Image Analysis</h3>
-<p>Object based image analysis is a method of for analysing remotely sensed data at the multi-pixel or ‘superpixel’ level by identifying discrete physical objects (buildings, small bodies of water, fields, etc…) which can then be classified at object level as opposed to considering pixels in isolation <span class="citation" data-cites="blaschke2010">(<a href="#ref-blaschke2010" role="doc-biblioref">Blaschke 2010</a>)</span>.</p>
+<p>Object based image analysis is a method of analysing remotely sensed data at the multi-pixel or ‘superpixel’ level by identifying discrete physical objects (buildings, small bodies of water, fields, etc…) which can then be classified at object level as opposed to considering pixels in isolation <span class="citation" data-cites="blaschke2010">(<a href="#ref-blaschke2010" role="doc-biblioref">Blaschke 2010</a>)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/OBIA.png" class="img-fluid figure-img" width="800"></p>
 <figcaption class="figure-caption">A Remotely Sensed Image segmented using OBIA - <span class="citation" data-cites="gisgeography2023">GISGeography (<a href="#ref-gisgeography2023" role="doc-biblioref">2023</a>)</span></figcaption>
 </figure>
 </div>
-<p>The most common way of doing this is an algorithm known as Simple Linear Iterative Clustering, which partitions the image into a grid before iteratively moving the centre of each cell to best capture the pixels which are most homogeneous with the rest of the chunk, in a manner similar to k-means clustering <span class="citation" data-cites="achanta2012">(<a href="#ref-achanta2012" role="doc-biblioref">Achanta et al. 2012</a>)</span>. This algorithm attempts to keep objects both spatially and spectrally compact, meaning they retain consistent appearance and a small physical distance from end to end.</p>
+<p>The most common way of doing this is an algorithm known as Simple Linear Iterative Clustering, which partitions the image into a grid before iteratively moving the centre of each cell to best capture the pixels which maximise the homogeneity of the chunk, in a manner similar to k-means clustering <span class="citation" data-cites="achanta2012">(<a href="#ref-achanta2012" role="doc-biblioref">Achanta et al. 2012</a>)</span>. This algorithm attempts to keep objects both spatially and spectrally compact, meaning they retain a consistent appearance and a small physical distance from end to end.</p>
 </section>
 <section id="sub-pixel-analysis" class="level3" data-number="8.1.2">
 <h3 data-number="8.1.2" class="anchored" data-anchor-id="sub-pixel-analysis"><span class="header-section-number">8.1.2</span> Sub-Pixel Analysis</h3>
@@ -257,7 +264,7 @@ Producer’s accuracy, or PA, is the percentage of pixels correctly classified b
 <li><strong>User’s Accuracy<br>
 </strong>User’s Accuracy is a measure of the proportion of pixels classified as a particular class which actually belong to that class <span class="citation" data-cites="barsi2018">(<a href="#ref-barsi2018" role="doc-biblioref">Barsi et al. 2018</a>)</span>. In other words, if I select a random pixel which was classified as ‘bare earth’, what’s the likelihood that it’s actually bare earth?</li>
 </ol>
-<p>There is an inherent trade-off between these two metrics - if an algorithm is ‘quick to classify’ pixels as a certain class when they may not belong to that class ensures that all pixels of that class are captured but the algorithm may also capture pixels not belonging to that class. On the other hand, an algorithm only classifies pixels as a given class when it’s absolutely positive you can assume those pixels to be of that class with a high degree of confidence, but there will likely be many pixels of that class not captured by the algorithm.</p>
+<p>There is an inherent trade-off between these two metrics - if an algorithm is ‘quick to classify’ pixels as a certain class when they may not belong to that class, it ensures that all pixels of that class are captured but the algorithm may also capture pixels not belonging to that class. On the other hand, an algorithm which only classifies pixels as a given class when it’s absolutely positive is one for which you can assume those pixels to be of that class with a high degree of confidence, but there will likely be many pixels of that class not captured by the algorithm.</p>
 <p>There are a handful of metrics which attempt to capture, in a single statistic, the accuracy of a classification algorithm. One of the most widely used, the Kappa coefficient, attempts to measure how well a model classifies an image when compared to an algorithm randomly classifying pixels <span class="citation" data-cites="foody2020">(<a href="#ref-foody2020" role="doc-biblioref">Foody 2020</a>)</span>. There are, however, a number of issues with the measure with some arguing that it is difficult to interpret and doesn’t accurately capture ‘chance agreement’ as intended <span class="citation" data-cites="foody2020">(<a href="#ref-foody2020" role="doc-biblioref">Foody 2020</a>)</span>.</p>
 </section>
 <section id="machine-learning-approaches" class="level3" data-number="8.1.4">
@@ -276,7 +283,7 @@ Producer’s accuracy, or PA, is the percentage of pixels correctly classified b
 <figcaption class="figure-caption">iSLOOCV applied to a set of observations in the Gulf of Mexico - <span class="citation" data-cites="stock2022">Stock and Subramaniam (<a href="#ref-stock2022" role="doc-biblioref">2022</a>)</span></figcaption>
 </figure>
 </div>
-<p>An application of Object-based image analysis which is of particular interest to me is its use in change detection. Given the nature of change as often concerned with changes in discrete objects at ground-level, it’s easy to see why object-based methods are a sensible choice. <span class="citation" data-cites="im2008">Im, Jensen, and Tullis (<a href="#ref-im2008" role="doc-biblioref">2008</a>)</span> develop a new method of change detection attempting to evaluate changes in landcover at the object level. To do this, they normalise data across their two images (before and after) and extract reference points which are classified into five ‘unchanged classes’ (landcover was the same between both images) and three ‘change classes’, representing examples of different types of change. They then applied nearest-neighbour and decision tree classification algorithms to their images in order to generate what they called an ‘object correlation image’. They then compared their results against images generated by an existing methodology (neighbourhood correlation image) which classified local, multi-pixel areas but didn’t use any sort of object detection. Object-based performed the best classification and had higher kappa values than the neighbourhood-based analysis (although as discussed previously, kappa coefficients are not a bulletproof metric).</p>
+<p>An application of Object-based image analysis which is of particular interest to me is its use in change detection. Given the nature of change (as seen from above) as often concerned with changes in discrete objects at ground-level, it’s easy to see why object-based methods are a sensible choice. <span class="citation" data-cites="im2008">Im, Jensen, and Tullis (<a href="#ref-im2008" role="doc-biblioref">2008</a>)</span> develop a new method of change detection attempting to evaluate changes in landcover at the object level. To do this, they normalise data across their two images (before and after) and extract reference points which are classified into five ‘unchanged classes’ (landcover was the same between both images) and three ‘change classes’, representing examples of different types of change. They then applied nearest-neighbour and decision tree classification algorithms to their images in order to generate what they called an ‘object correlation image’. They then compared their results against images generated by an existing methodology (neighbourhood correlation image) which classified local, multi-pixel areas but didn’t use any sort of object detection. Object-based performed the best classification and had higher kappa values than the neighbourhood-based analysis (although as discussed previously, kappa coefficients are not a bulletproof metric).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/OCI:NCI.png" class="img-fluid figure-img" width="800"></p>
@@ -568,6 +575,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./wk9.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

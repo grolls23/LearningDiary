@@ -174,6 +174,12 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Advanced Classification and Accuracy Assesment</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -254,11 +260,11 @@ div.csl-indent {
 <ol type="1">
 <li>The use of multi-temporal data</li>
 <li>Use of data from optical sensor platforms, particularly Landsat and MODIS</li>
-<li>Applications with a particular focus on phenoma in the natural environment.</li>
+<li>Applications with a particular focus on phenomena in the natural environment</li>
 </ol>
 <p>In particular, products like NDVI, land-cover, and forest change datasets were used in a substantial number of applications. Additionally, the application of machine learning techniques is becoming increasingly common <span class="citation" data-cites="tamiminiaGoogleEarthEngine2020">(<a href="#ref-tamiminiaGoogleEarthEngine2020" role="doc-biblioref">Tamiminia et al. 2020</a>)</span>.</p>
 <p>With that said, the two applications I’d like to further investigate are the use of Landsat imagery for population mapping and urban change over time from <span class="citation" data-cites="patelMultitemporalSettlementPopulation2015">Patel et al. (<a href="#ref-patelMultitemporalSettlementPopulation2015" role="doc-biblioref">2015</a>)</span> and monitoring changes in heat island effects as a result of land cover changes from <span class="citation" data-cites="ravanelliMonitoringImpactLand2018">Ravanelli et al. (<a href="#ref-ravanelliMonitoringImpactLand2018" role="doc-biblioref">2018</a>)</span>.</p>
-<p><span class="citation" data-cites="patelMultitemporalSettlementPopulation2015">Patel et al. (<a href="#ref-patelMultitemporalSettlementPopulation2015" role="doc-biblioref">2015</a>)</span> measure urban change over the 40-year lifespan of the Landsat programme by extracting urban areas from Landsat data. To do this, they calculate the Normalized Difference Spectral Vector (NDSV), which a vector containing all possible normalised indexes of band pairs for a total of 30. They write that urban areas have a unique NDSV signature and can thus be used to identify urban change. From that point, they apply a random forest model to estimate area populations. As the authors themselves write, Earth Engine is the obvious tool to use in this context as it allows for the efficient processing of multi-temporal RS data, making it perfect for analysing urban change over time.</p>
+<p><span class="citation" data-cites="patelMultitemporalSettlementPopulation2015">Patel et al. (<a href="#ref-patelMultitemporalSettlementPopulation2015" role="doc-biblioref">2015</a>)</span> measure urban change over the 40-year lifespan of the Landsat programme by extracting urban areas from Landsat data. To do this, they calculate the Normalized Difference Spectral Vector (NDSV), which is a vector containing all possible normalised indexes of band pairs for a total of 30. They write that urban areas have a unique NDSV signature and can thus be used to identify urban change. From that point, they apply a random forest model to estimate area populations. As the authors themselves write, Earth Engine is the obvious tool to use in this context as it allows for the efficient processing of multi-temporal RS data, making it perfect for analysing urban change over time.</p>
 <p><span class="citation" data-cites="ravanelliMonitoringImpactLand2018">Ravanelli et al. (<a href="#ref-ravanelliMonitoringImpactLand2018" role="doc-biblioref">2018</a>)</span> also take advantage of the spatio-temporal richness of Earth Engine’s data catalogue, but apply it instead to surface urban heat island effects, or SUHI, in an attempt to understand how land cover changes may play a role. To do this, they use land-cover maps (NCLD, as the study is US centric) to measure land-cover change and Climate Engine, a tool integrated with Earth Engine, to derive land surface temperature (LST) from the Landsat product. They then apply a simple linear regression model on a per-pixel basis to understand the relationship with LST. <span class="citation" data-cites="ravanelliMonitoringImpactLand2018">Ravanelli et al. (<a href="#ref-ravanelliMonitoringImpactLand2018" role="doc-biblioref">2018</a>)</span> were less concerned with specific results and more interested in demonstrating the potential efficacy of their method for connecting LST and land-cover. To that end, they identified inconsistencies in their data between swings in LST versus air temperature as measured from ground-based weather monitoring stations.</p>
 </section>
 <section id="reflection" class="level2" data-number="6.3">

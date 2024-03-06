@@ -4,4 +4,4 @@ author: "Gavin Rolls"
 date: "2/13/2024"
 ---
 
-Week Five was a week off - content will resume in Week Six
+Week Five was a week off - content will resume in Week Six.

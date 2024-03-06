@@ -16,7 +16,7 @@ The medium of remote sensing is electromagnetic radiation. Remote sensing platfo
 
 ### **Active versus passive sensors**
 
-Satellite sensors can be classified either as passive sensors or active sensors. A passive sensor only detects radiation reflected from the earth to the sensor and emits no energy of its own. For instance, an optical camera only captures light as it enters the aperture, emitting no energy of its own. An active sensor also captures energy from the surface, but the sensor is also the original source of that energy. For instance, a radar satellite emit radar pulses to the surface to capture their reflection [@earthsciencedatasystems2020].
+Satellite sensors can be classified either as passive sensors or active sensors. A passive sensor only detects radiation reflected from the earth to the sensor and emits no energy of its own. For instance, an optical camera only captures light as it enters the aperture, emitting no energy of its own. An active sensor also captures energy from the surface, but the sensor is also the original source of that energy. For instance, a radar satellite emits radar pulses to the surface to capture their reflection [@earthsciencedatasystems2020].
 
 ### **Types of Data Resolution**
 

@@ -10,13 +10,13 @@ Our focus in Remote Sensing this week was on classifying remotely sensed data. B
 
 ### Classification Trees
 
-Classification trees are a data structure which allows a given data point to be classified based on its attributes. Not unlike a flowchart, each node of the classification tree poses a question about a data point and each linkage between nodes represents an answer to that question. Leaf nodes represent the classifications into which a given data point is being sorted
+Classification trees are a data structure which allows a given data point to be classified based on its attributes. Not unlike a flowchart, each node of the classification tree poses a question about a data point and each linkage between nodes represents an answer to those questions. Leaf nodes represent the classifications into which a given data point is being sorted.
 
 ![A diagram illustrating an example of a classification tree - @ibmWhatDecisionTree](img/Decision-Tree.png){width="600"}
 
 What distinguishes a classification tree from a flowchart is that there exists a well-defined method to establish their structure, based on a set of predictor variables, or attributes of each data point. From the root node, data is split on a given attribute (and at a given value if the data is continuous) which minimizes the impurity of the resulting set of points at each child node. This process is then repeated at each node to break the data into more granular categories [@lohClassificationRegressionTrees2011].
 
-Impurity in this context refers to the homogeneity of the sets resulting from a split, with respect to the levels of their other predictor variables [@laber2019]. As a lose example, if splitting a dataset depending on if its attribute $X_1$ is greater or less than five, yields datasets which have a higher 'purity', or similarity than whether or not boolean attribute $X_2$ is true or false, then the node splitting $X_1$ will be farther up the tree.
+Impurity in this context refers to the homogeneity of the sets resulting from a split, with respect to the levels of their other predictor variables [@laber2019]. As a lose example, if splitting a dataset depending on if its attribute $X_1$ is greater or less than five, yields datasets which have a higher 'purity', or similarity than whether or not boolean attribute $X_2$ is true or false, then the node splitting $X_1$ will be closer to the root of the tree.
 
 ### Regression Trees
 
@@ -36,7 +36,7 @@ The broad motivation for random forests are that they reduce the risk of over-fi
 
 ### Support Vector Machine (SVM)
 
-In a departure from the decision tree paradigm, support vector machines utilise not a tree structure to classify objects but instead divide options within the feature space they occupy [@pisner2020]. In a two-dimensional feature space, this is not unlike linear regression wherein a boundary is drawn in the two-dimensional plane which separates a set of observations into categories based on their $x$ and $y$ values. That said, it does not achieve this by minimising the sum of squared residuals. Instead, it identifies the line that maximises the margin (which can be thought of as empty space) between the classes it separates. The points on the boundary of this margin are referred to as 'support vectors'. support vector machines can also be designed to allow a small number of data points to be misclassified. Although counter-intuitive, allowing errors can make one's model more generalisable [@pisner2020].
+In a departure from the decision tree paradigm, support vector machines utilise not a tree structure to classify objects but instead divide options within the feature space they occupy [@pisner2020]. In a two-dimensional feature space, this is not unlike linear regression wherein a boundary is drawn in the two-dimensional plane based on a set of observations. That said, it does not identify this line by minimising the sum of squared residuals. Instead, it identifies the line that maximises the margin (which can be thought of as empty space) between the classes (groups) it separates. The points on the boundary of this margin are referred to as 'support vectors'. support vector machines can also be designed to allow a small number of data points to be misclassified. Although counter-intuitive, allowing errors can make one's model more generalisable [@pisner2020].
 
 ![An example of a support vector margin separating data into two classifications - @mathworks](img/SVM.jpg){width="600"}
 
