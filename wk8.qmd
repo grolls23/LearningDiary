@@ -35,13 +35,17 @@ There are a handful of metrics which attempt to capture, in a single statistic, 
 
 ### Machine Learning Approaches
 
-Finally, we touched on a handful of approaches which deploy machine learning to in order to maximise classification accuracy. The basic principle underlying these principles is that a model trained on a particular dataset will then be tested against a portion of that dataset which it has not yet seen. Typically this means that a dataset will be subdivided into folds, where each fold can be used as a test set for an algorithm trained on all other folds [@stock2022]. One version of this approach, known as 'leave one out cross validation', uses a number of folds equivalent to the number of observations in the dataset, effectively testing each algorithm on a single data point [@stock2022].
+Finally, we touched on a handful of approaches which deploy machine learning to in order to maximise classification accuracy. The basic principle underlying these principles is that a model trained on a particular dataset will then be tested against a portion of that dataset which it has not yet seen. Typically this means that a dataset will be subdivided into folds, where each fold can be used as a test set for an algorithm trained on all other folds [@stock2022]. One version of this approach, known as 'leave-one-out cross-validation', uses a number of folds equivalent to the number of observations in the dataset, effectively testing each algorithm on a single data point [@stock2022].
+
+A key issue, unique to spatial data, arises in the form of spatial autocorrelation. If our testing and training data are in close proximity, they're likely to be similar to each other. The test set is unlikely, then, to represent a novel sort of data which can accurately assess the algorithm at hand. A solution comes in the form of random k-fold cross-validation, where the data is not split randomly but spatially, and individual folds are spatially non-overlapping [@wang2023]. More advanced methods will further subdivide these folds into inner folds and test multiple models with randomly selected parameters in attempt to find the best possible model.
 
 ## Applications in Research
 
-\[WIP\]
+For this section I will discuss both a paper that expands on the methods described above as well as one which applies these methods for a particular use case.
 
-\[USE STOCK 2022 - PDF ON DESKTOP - INSERT SLOOCV IMAGE HERE\]
+@stock2022 propose a novel method of leave-one-out cross-validation, which they call iterative spatial leave-one-out cross-validation, or iSLOOCV. Typical spatial leave-one-out cross-validation (SLOOCV) works by excluding any observations within a certain distance $r$ of the single test set variable to avoid spatial autocorrelation effects. The method proposed by @stock2022 introduces an iterative element, wherein $r$ is varied from 100 metres to 200 kilometres in order to identify shifts in error over the different threshold differences and identify the minimum separation required to avoid spatial autocorrelation effects.
+
+![iSLOOCV applied to a set of observations in the Gulf of Mexico - @stock2022](img/SLOOCV.png)
 
 ## Reflection
 
