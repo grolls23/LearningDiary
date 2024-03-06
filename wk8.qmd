@@ -10,7 +10,11 @@ A continuation of last week's look into the classification of remotely sensed im
 
 ### Object Based Image Analysis
 
-Object based image analysis is a method of for analysing remotely sensed data at the multi-pixel or 'superpixel' level by identifying discrete physical objects (buildings, small bodies of water, fields, etc...) which can then be classified at object level as opposed to considering pixels in isolation [@blaschke2010]. The most common way of doing this is an algorithm known as Simple Liear Iterative Clustering, which partitions the image into a grid before iteratively moving the centre of each cell to best capture the pixels which are most homogeneous with the rest of the chunk, in a manner similar to k-means clustering [@achanta2012]. This algorithm attempts to keep objects both spatially and spectrally compact, meaning they retain consistent appearance and a small physical distance from end to end.
+Object based image analysis is a method of for analysing remotely sensed data at the multi-pixel or 'superpixel' level by identifying discrete physical objects (buildings, small bodies of water, fields, etc...) which can then be classified at object level as opposed to considering pixels in isolation [@blaschke2010].
+
+![A Remotely Sensed Image segmented using OBIA - @gisgeography2023](img/OBIA.png){width="800"}
+
+The most common way of doing this is an algorithm known as Simple Linear Iterative Clustering, which partitions the image into a grid before iteratively moving the centre of each cell to best capture the pixels which are most homogeneous with the rest of the chunk, in a manner similar to k-means clustering [@achanta2012]. This algorithm attempts to keep objects both spatially and spectrally compact, meaning they retain consistent appearance and a small physical distance from end to end.
 
 ### Sub-Pixel Analysis
 
@@ -20,16 +24,24 @@ In contrast to analysis at the multi-pixel analysis, sub-pixel analysis concerns
 
 The key issue we focused on in lecture (and which I would like to focus on in this review) is that of determining how accurately a landcover classification algorithm has actually divided an image. There are two key accuracy metrics to consider:
 
-1.  **Producer Accuracy**\
-    \[TEXT\]
+1.  **Producer's Accuracy**\
+    Producer's accuracy, or PA, is the percentage of pixels correctly classified by landcover [@barsi2018]. In other words, if I select a pixel that's 'bare earth', what's the likelihood that it has been classified as bare earth by our algorithm?
 2.  **User's Accuracy\
-    **\[Text\]
+    **User's Accuracy is a measure of the proportion of pixels classified as a particular class which actually belong to that class [@barsi2018]. In other words, if I select a random pixel which was classified as 'bare earth', what's the likelihood that it's actually bare earth?
 
-\[Continue here.\]
+There is an inherent trade-off between these two metrics - if an algorithm is 'quick to classify' pixels as a certain class when they may not belong to that class ensures that all pixels of that class are captured but the algorithm may also capture pixels not belonging to that class. On the other hand, an algorithm only classifies pixels as a given class when it's absolutely positive you can assume those pixels to be of that class with a high degree of confidence, but there will likely be many pixels of that class not captured by the algorithm.
+
+There are a handful of metrics which attempt to capture, in a single statistic, the accuracy of a classification algorithm. One of the most widely used, the Kappa coefficient, attempts to measure how well a model classifies an image when compared to an algorithm randomly classifying pixels [@foody2020]. There are, however, a number of issues with the measure with some arguing that it is difficult to interpret and doesn't accurately capture 'chance agreement' as intended [@foody2020].
+
+### Machine Learning Approaches
+
+Finally, we touched on a handful of approaches which deploy machine learning to in order to maximise classification accuracy. The basic principle underlying these principles is that a model trained on a particular dataset will then be tested against a portion of that dataset which it has not yet seen. Typically this means that a dataset will be subdivided into folds, where each fold can be used as a test set for an algorithm trained on all other folds [@stock2022]. One version of this approach, known as 'leave one out cross validation', uses a number of folds equivalent to the number of observations in the dataset, effectively testing each algorithm on a single data point [@stock2022].
 
 ## Applications in Research
 
 \[WIP\]
+
+\[USE STOCK 2022 - PDF ON DESKTOP - INSERT SLOOCV IMAGE HERE\]
 
 ## Reflection
 
