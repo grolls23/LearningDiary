@@ -53,6 +53,8 @@ An application of Object-based image analysis which is of particular interest to
 
 ## Reflection
 
-\[WIP\]
+In my opinion, the most telling lesson amidst the topics discussed on remote sensing classes is that of the Kappa coefficient. It's a reminder to me that even in an academic setting, where one would hope that accuracy is paramount, established methods can take hold even when reasonable alternatives exist. I was surprised to see in @im2008 that the metrics being used to show accuracy were Producer's accuracy, User's accuracy, and the Kappa coefficient. No other accuracy metrics were provided. Additionally, the coefficients generated were all within a narrow, 4% band making it difficult to understand a) how good the classifiers are in general and b) if the new object-based method is really all that much better than existing methods.
+
+I've already encountered the use of some of the more robust accuracy metrics we discussed in class when doing research for our group presentation assessment, such the Receiver Operating Characteristic Curve (the details for which I omitted to save space). To that end, I know preferable metrics can be used with relative ease so the lag in adoption is interesting to see.
 
 ## References
