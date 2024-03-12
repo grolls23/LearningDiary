@@ -6,12 +6,24 @@ date: "3/19/2024"
 
 ## Summary
 
-\[Text\]
+In a departure from nearly every other type of remotely sensed imagery we've covered in this course, we spent our last week speaking about Synthetic Aperture Radar, better known as SAR. I'll briefly discuss what makes SAR so unique compared to the other sensors we've discussed before chatting about some of the key use cases for the technology.
+
+### A new type of sensor
+
+In the very first week of class, I briefly touched on the difference between active and passive sensors in the [first entry](https://grolls23.github.io/LearningDiary/wk1.html#active-versus-passive-sensors) of this very learning diary.
 
 ## **Applications in Research**
 
-\[Text\]
+\[SECTION ON FLOODING DETECTION\]
+
+\[EARTHQUAKE STUFF - LOOK UP WHAT THIS IS CALLED AGAIN\]
+
+\[OLLIE'S USE CASE - WARTIME DAMAGE\]
+
+\[OIL SPILL PAPER?\]
 
 ## Reflection
 
-\[Text\]
+\[UTILITY FOR OUR SPATIAL APPLIATIONS CLASS/PRESENTATION\]
+
+## References
