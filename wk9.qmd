@@ -42,6 +42,8 @@ Backscatter effects aside, I wrote earlier about the use of SAR in identifying s
 
 ## Reflection
 
-I particularly enjoyed learning about SAR and SAR-techniques in both Remote Sensing and Building Spatial Applications for Big data. First, I think the
+I particularly enjoyed learning about SAR and SAR-techniques in both Remote Sensing and Building Spatial Applications for Big Data. First, I think the fact that SAR collects a completely different sort of data makes it a unique tool in the toolbox of techniques and sensors which we've been assembling this term. It was especially surprising to me how many seemingly unrelated applications existed for SAR, which I suppose has to do with the variety of data encoded in each SAR system (backscatter, polarization, phase). I think interferometry is a particularly unique case, and I'd be interested in further exploring applications outside of earthquake detection.
+
+I also enjoyed learning about SAR because it has immediate utility for the policy presentation which my group will be presenting on in this coming week. We've been putting together a presentation on flood risk in Da Nang, specifically as it pertains to urban expansion in the region. I've read a number of papers when working on that presentation indicating that SAR is a useful tool for flood mapping, but because I didn't really understand the mechanisms that drove the technology I didn't understand until now why that might be the case. Additionally, this week's practical on SAR in Building Spatial Applications for Big Data focused on how to create an Earth-Engine powered web app that performed building damage detection using SAR, and I have no doubt that the hands on experience from that practical will be very useful when it comes time for my group to build a flood risk app underpinned by the same software.
 
 ## References
