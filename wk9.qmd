@@ -8,15 +8,31 @@ date: "3/19/2024"
 
 In a departure from nearly every other type of remotely sensed imagery we've covered in this course, we spent our last week speaking about Synthetic Aperture Radar, better known as SAR. I'll briefly discuss what makes SAR so unique compared to the other sensors we've discussed before chatting about some of the key use cases for the technology.
 
-### A new type of sensor
+### SAR is an Active Sensor
 
-In the very first week of class, I briefly touched on the difference between active and passive sensors in the [first entry](https://grolls23.github.io/LearningDiary/wk1.html#active-versus-passive-sensors) of this very learning diary.
+In the very first week of class, I briefly touched on the difference between active and passive sensors in the [first entry](https://grolls23.github.io/LearningDiary/wk1.html#active-versus-passive-sensors) of this learning diary. Whereas every sensor we've discussed so far has been a passive sensor, where it simply detects radiation reflected off the Earth's surface, SAR is an active sensor which emits radiation at a very specific wavelength and measures reflections of its own radiation off the surface [@earthsciencedatasystems2020].
+
+SAR uses a 'synthetic aperture', meaning
+
+[@nasaGetKnowSARn.d.]
+
+### Data Captured by SAR
+
+\[PHOTO OF GALAPAGOS HERE\]
+
+\[Magnitude (Amplitude)?\]
+
+\[Polarization\]
+
+-   \[INSERT POLARIVATION PHOTO HERE\]
+
+\[Part of Phase\]
 
 ## **Applications in Research**
 
 \[SECTION ON FLOODING DETECTION\]
 
-\[EARTHQUAKE STUFF - LOOK UP WHAT THIS IS CALLED AGAIN\]
+\[EARTHQUAKE STUFF - Interferometry/InSAR\]
 
 \[OLLIE'S USE CASE - WARTIME DAMAGE\]
 

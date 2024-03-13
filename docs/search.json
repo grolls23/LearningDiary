@@ -207,20 +207,27 @@
     "href": "wk9.html#summary",
     "title": "9  Synthetic Aperture Radar",
     "section": "9.1 Summary",
-    "text": "9.1 Summary\n[Text]"
+    "text": "9.1 Summary\nIn a departure from nearly every other type of remotely sensed imagery we’ve covered in this course, we spent our last week speaking about Synthetic Aperture Radar, better known as SAR. I’ll briefly discuss what makes SAR so unique compared to the other sensors we’ve discussed before chatting about some of the key use cases for the technology.\n\n9.1.1 SAR is an Active Sensor\nIn the very first week of class, I briefly touched on the difference between active and passive sensors in the first entry of this learning diary. Whereas every sensor we’ve discussed so far has been a passive sensor, where it simply detects radiation reflected off the Earth’s surface, SAR is an active sensor which emits radiation at a very specific wavelength and measures reflections of its own radiation off the surface (Earth Science Data Systems 2020).\n[WHY IS IT ‘SYNTHETIC’?]\n\n\n9.1.2 Data Captured by SAR\n[Magnitude (Amplitude)?]\n[Polarization]\n[Part of Phase]"
   },
   {
     "objectID": "wk9.html#applications-in-research",
     "href": "wk9.html#applications-in-research",
     "title": "9  Synthetic Aperture Radar",
     "section": "9.2 Applications in Research",
-    "text": "9.2 Applications in Research\n[Text]"
+    "text": "9.2 Applications in Research\n[SECTION ON FLOODING DETECTION]\n[EARTHQUAKE STUFF - LOOK UP WHAT THIS IS CALLED AGAIN]\n[OLLIE’S USE CASE - WARTIME DAMAGE]\n[OIL SPILL PAPER?]"
   },
   {
     "objectID": "wk9.html#reflection",
     "href": "wk9.html#reflection",
     "title": "9  Synthetic Aperture Radar",
     "section": "9.3 Reflection",
-    "text": "9.3 Reflection\n[Text]"
+    "text": "9.3 Reflection\n[UTILITY FOR OUR SPATIAL APPLIATIONS CLASS/PRESENTATION]"
+  },
+  {
+    "objectID": "wk9.html#references",
+    "href": "wk9.html#references",
+    "title": "9  Synthetic Aperture Radar",
+    "section": "9.4 References",
+    "text": "9.4 References\n\n\n\n\nEarth Science Data Systems, NASA. 2020. “What Is Synthetic Aperture Radar? | Earthdata.” https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar."
   }
 ]

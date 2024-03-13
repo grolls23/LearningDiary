@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -170,9 +189,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#sar-is-an-active-sensor" id="toc-sar-is-an-active-sensor" class="nav-link" data-scroll-target="#sar-is-an-active-sensor"><span class="header-section-number">9.1.1</span> SAR is an Active Sensor</a></li>
+  <li><a href="#data-captured-by-sar" id="toc-data-captured-by-sar" class="nav-link" data-scroll-target="#data-captured-by-sar"><span class="header-section-number">9.1.2</span> Data Captured by SAR</a></li>
+  </ul></li>
   <li><a href="#applications-in-research" id="toc-applications-in-research" class="nav-link" data-scroll-target="#applications-in-research"><span class="header-section-number">9.2</span> <strong>Applications in Research</strong></a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">9.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -210,17 +234,39 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
-<p>[Text]</p>
+<p>In a departure from nearly every other type of remotely sensed imagery we’ve covered in this course, we spent our last week speaking about Synthetic Aperture Radar, better known as SAR. I’ll briefly discuss what makes SAR so unique compared to the other sensors we’ve discussed before chatting about some of the key use cases for the technology.</p>
+<section id="sar-is-an-active-sensor" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="sar-is-an-active-sensor"><span class="header-section-number">9.1.1</span> SAR is an Active Sensor</h3>
+<p>In the very first week of class, I briefly touched on the difference between active and passive sensors in the <a href="https://grolls23.github.io/LearningDiary/wk1.html#active-versus-passive-sensors">first entry</a> of this learning diary. Whereas every sensor we’ve discussed so far has been a passive sensor, where it simply detects radiation reflected off the Earth’s surface, SAR is an active sensor which emits radiation at a very specific wavelength and measures reflections of its own radiation off the surface <span class="citation" data-cites="earthsciencedatasystems2020">(<a href="#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span>.</p>
+<p>[WHY IS IT ‘SYNTHETIC’?]</p>
+</section>
+<section id="data-captured-by-sar" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="data-captured-by-sar"><span class="header-section-number">9.1.2</span> Data Captured by SAR</h3>
+<p>[Magnitude (Amplitude)?]</p>
+<p>[Polarization]</p>
+<p>[Part of Phase]</p>
+</section>
 </section>
 <section id="applications-in-research" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="applications-in-research"><span class="header-section-number">9.2</span> <strong>Applications in Research</strong></h2>
-<p>[Text]</p>
+<p>[SECTION ON FLOODING DETECTION]</p>
+<p>[EARTHQUAKE STUFF - LOOK UP WHAT THIS IS CALLED AGAIN]</p>
+<p>[OLLIE’S USE CASE - WARTIME DAMAGE]</p>
+<p>[OIL SPILL PAPER?]</p>
 </section>
 <section id="reflection" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
-<p>[Text]</p>
+<p>[UTILITY FOR OUR SPATIAL APPLIATIONS CLASS/PRESENTATION]</p>
+</section>
+<section id="references" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="references"><span class="header-section-number">9.4</span> References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-earthsciencedatasystems2020" class="csl-entry" role="listitem">
+Earth Science Data Systems, NASA. 2020. <span>“What Is Synthetic Aperture Radar? | Earthdata.”</span> <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
