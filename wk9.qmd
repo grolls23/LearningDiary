@@ -36,9 +36,9 @@ Finally, SAR signals also contain information about their phase. As a signal wav
 
 SAR data can be used in a number of dramatically different applications using its many different (and somewhat unrelated) properties. I will focus on two different use cases, one which takes advantage of backscatter measurements and one which uses changes in wave phase to measure topography changes.
 
-\[SECTION ON FLOODING DETECTION\]
+Because still water is easily detected due to its low-backscatter properties, flood mapping is a common application of SAR data. @giustarini2016 create a probabilistic map of flooding by estimating the likelihood of each pixel being flooded based on a histogram of backscatter areas for the study area of interest, and decomposing it into probability distribution functions corresponding with the likelihood of a given pixel being flooded. They then apply this methodology to a handful of different case studies combining different areas of interest (the Severn River in England and Wales and the Red River in Minnesota and North Dakota), flood events in those locations, and SAR sensors for data collection. They find that their methodology generated maps which broadly aligned with what they termed a 'perfectly reliable probabilistic' map based on hydrology models and other data inputs. They also include the caveat that the land cover type of the underlying study area is likely to have a meaningful effect on the accuracy of their model, as certain land cover types might have backscatter properties closer to that of flood water. They propose an integrated model that captures hydrological and topographical data to better improve its estimates.
 
-\[EARTHQUAKE STUFF - Interferometry/InSAR\]
+Backscatter effects aside, I wrote earlier about the use of SAR in identifying small-scale topography change through a method known as interferometry.
 
 ## Reflection
 
