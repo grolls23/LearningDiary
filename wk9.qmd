@@ -10,21 +10,23 @@ In a departure from nearly every other type of remotely sensed imagery we've cov
 
 ### SAR is an Active Sensor
 
-In the very first week of class, I briefly touched on the difference between active and passive sensors in the [first entry](https://grolls23.github.io/LearningDiary/wk1.html#active-versus-passive-sensors) of this learning diary. Whereas every sensor we've discussed so far has been a passive sensor, where it simply detects radiation reflected off the Earth's surface, SAR is an active sensor which emits radiation at a very specific wavelength and measures reflections of its own radiation off the surface [@earthsciencedatasystems2020].
+In the very first week of class, I briefly touched on the difference between active and passive sensors in the [first entry](https://grolls23.github.io/LearningDiary/wk1.html#active-versus-passive-sensors) of this learning diary. Whereas every sensor we've discussed so far has been a passive sensor, which simply detects radiation reflected off the Earth's surface, SAR is an active sensor which emits radiation at a very specific wavelength and measures reflections of its own radiation off the surface [@earthsciencedatasystems2020]. These wavelengths fall into the microwave portion of the electromagnetic spectrum, and are longer than visible and infrared light. They are measured on the order of centimetres instead of millimetres or nanometres. This gives SAR sensors the unique ability to detect ground-level phenomena through clouds.
 
-SAR uses a 'synthetic aperture', meaning
+At such large wavelengths, the size of the radar antenna, which you could call the aperture, relative to the wavelength becomes an important constraint. The swath of land being detected on earth by a single pulse, perhaps kilometres in width, is recorded in extremely low resolution [@nasaGetKnowSARn.d.].
 
-[@nasaGetKnowSARn.d.]
+To overcome this limitation, SAR uses a 'synthetic aperture' that is substantially longer than the metres-long antenna capable of being mounted on the satellite itself. It manages to do this by using its trajectory through space to 'synthesise' a much larger antenna. Because the satellite captures an area of multiple kilometres with each pulse, it can detect a single point on earth with a number of different pulses taken from different points along its orbit, a sort of composite image of each point can be generated to massively improve the effective resolution [@nasaGetKnowSARn.d.].
 
 ### Data Captured by SAR
 
-\[PHOTO OF GALAPAGOS HERE\]
+SAR data is less straightforward to interpret than traditional optical data, because SAR signals have a number of different properties which provide information about ground conditions. I will detail these below
 
-\[Magnitude (Amplitude)?\]
+![The Galapagos Islands, as captured by a SAR sensor (with wavelengths between 2.4 and 7.5cm) on Space Shuttle Endeavour - @nasaGetKnowSARn.d.](img/GalapagosSAR.jpeg){width="800"}
 
-\[Polarization\]
+The primary information returned by a SAR signal, analogous to radiometric intensity in a passive optical sensor, is known as backscatter, or amplitude. This is a simple measure of how much of the radar pulse which the SAR sensor sent to earth was returned back to the satellite. This information is valuable to users because different types of surfaces reflect (or fail to reflect) radar pulses to different extents. For instance, flat surfaces like still water tend to scatter radar signals back into space but away from the satellite (and thus the sensor). For that reason, still water will appear as having very low backscatter [@clemente-colón2000]. Conversely, rough surfaces like bare land will scatter the signal in all directions, including back toward the satellite in question [@clemente-colón2000]. Buildings often return a substantial amount of the radar pulse back to the sensor through a characteristic 'double bounce', wherein the signal is scattered off of the building's surface, onto the ground, and then back into space in the direction from which it came.
 
--   \[INSERT POLARIVATION PHOTO HERE\]
+Uniquely to SAR, radar signals also exist in different polarizations, which refer
+
+![Different \[\...\] - @nasaGetKnowSARn.d.](img/DifferentPolarizations.jpeg)
 
 \[Part of Phase\]
 

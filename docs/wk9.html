@@ -237,20 +237,30 @@ div.csl-indent {
 <p>In a departure from nearly every other type of remotely sensed imagery we’ve covered in this course, we spent our last week speaking about Synthetic Aperture Radar, better known as SAR. I’ll briefly discuss what makes SAR so unique compared to the other sensors we’ve discussed before chatting about some of the key use cases for the technology.</p>
 <section id="sar-is-an-active-sensor" class="level3" data-number="9.1.1">
 <h3 data-number="9.1.1" class="anchored" data-anchor-id="sar-is-an-active-sensor"><span class="header-section-number">9.1.1</span> SAR is an Active Sensor</h3>
-<p>In the very first week of class, I briefly touched on the difference between active and passive sensors in the <a href="https://grolls23.github.io/LearningDiary/wk1.html#active-versus-passive-sensors">first entry</a> of this learning diary. Whereas every sensor we’ve discussed so far has been a passive sensor, where it simply detects radiation reflected off the Earth’s surface, SAR is an active sensor which emits radiation at a very specific wavelength and measures reflections of its own radiation off the surface <span class="citation" data-cites="earthsciencedatasystems2020">(<a href="#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span>.</p>
-<p>[WHY IS IT ‘SYNTHETIC’?]</p>
+<p>In the very first week of class, I briefly touched on the difference between active and passive sensors in the <a href="https://grolls23.github.io/LearningDiary/wk1.html#active-versus-passive-sensors">first entry</a> of this learning diary. Whereas every sensor we’ve discussed so far has been a passive sensor, which simply detects radiation reflected off the Earth’s surface, SAR is an active sensor which emits radiation at a very specific wavelength and measures reflections of its own radiation off the surface <span class="citation" data-cites="earthsciencedatasystems2020">(<a href="#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span>. These wavelengths fall into the microwave portion of the electromagnetic spectrum, and are longer than visible and infrared light. They are measured on the order of centimetres instead of millimetres or nanometres. This gives SAR sensors the unique ability to detect ground-level phenomena through clouds.</p>
+<p>At such large wavelengths, the size of the radar antenna, which you could call the aperture, relative to the wavelength becomes an important constraint. The swath of land being detected on earth by a single pulse, perhaps kilometres in width, is recorded in extremely low resolution <span class="citation" data-cites="nasaGetKnowSARn.d">(<a href="#ref-nasaGetKnowSARn.d" role="doc-biblioref"><strong>nasaGetKnowSARn.d?</strong></a>)</span>.</p>
+<p>To overcome this limitation, SAR uses a ‘synthetic aperture’ that is substantially longer than the metres-long antenna capable of being mounted on the satellite itself. It manages to do this by using its trajectory through space to ‘synthesise’ a much larger antenna. Because the satellite captures an area of multiple kilometres with each pulse, it can detect a single point on earth with a number of different pulses taken from different points along its orbit, a sort of composite image of each point can be generated to massively improve the effective resolution <span class="citation" data-cites="nasaGetKnowSARn.d">(<a href="#ref-nasaGetKnowSARn.d" role="doc-biblioref"><strong>nasaGetKnowSARn.d?</strong></a>)</span>.</p>
 </section>
 <section id="data-captured-by-sar" class="level3" data-number="9.1.2">
 <h3 data-number="9.1.2" class="anchored" data-anchor-id="data-captured-by-sar"><span class="header-section-number">9.1.2</span> Data Captured by SAR</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/GalapagosSAR.jpeg" class="img-fluid figure-img" width="800"></p>
+<figcaption class="figure-caption">The Galapagos Islands, as captured by a SAR sensor on Space Shuttle Endeavour - <span class="citation" data-cites="nasaGetKnowSARn.d">(<a href="#ref-nasaGetKnowSARn.d" role="doc-biblioref"><strong>nasaGetKnowSARn.d?</strong></a>)</span>.</figcaption>
+</figure>
+</div>
 <p>[Magnitude (Amplitude)?]</p>
 <p>[Polarization]</p>
+<ul>
+<li>[INSERT POLARIVATION PHOTO HERE]</li>
+</ul>
 <p>[Part of Phase]</p>
 </section>
 </section>
 <section id="applications-in-research" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="applications-in-research"><span class="header-section-number">9.2</span> <strong>Applications in Research</strong></h2>
 <p>[SECTION ON FLOODING DETECTION]</p>
-<p>[EARTHQUAKE STUFF - LOOK UP WHAT THIS IS CALLED AGAIN]</p>
+<p>[EARTHQUAKE STUFF - Interferometry/InSAR]</p>
 <p>[OLLIE’S USE CASE - WARTIME DAMAGE]</p>
 <p>[OIL SPILL PAPER?]</p>
 </section>
